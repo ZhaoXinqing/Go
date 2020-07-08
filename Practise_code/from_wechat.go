@@ -51,3 +51,25 @@ func main() {
 	}
 		
 }
+
+
+type Student struct{
+     Age int
+ }
+
+ func main(){
+    s := Student{30}
+    modify1(s)
+	fmt.Println(s) //{30}
+	
+    modify2(&s)
+    fmt.Println(s) //{32}
+ }
+
+ func modify1(s Student){
+    s.Age = 31
+ }
+
+ func modify2(s *Student){
+    s.Age = 32
+ }
