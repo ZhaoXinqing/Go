@@ -1,3 +1,6 @@
+pattern:
+
+
 package main
 
 import (
