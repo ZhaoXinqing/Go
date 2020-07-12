@@ -121,7 +121,6 @@ func exampleInt() {
 	sort.Ints(s)
 	fmt.Println(s)
 
-
 	s = []int{5, 2, 6, 3, 1, 4}
 	// 排序为递增顺序
 	// 将[]int指定为sort.IntSlice类型并排序，类型内部实现了排序方法

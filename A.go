@@ -1,4 +1,5 @@
 import "container/list"
+
 // list 包实现了一个双向链表，遍历一个链表
 for e := l.Front(); e != nil; e = e.Next() {
 	// do something with e.Value

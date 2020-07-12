@@ -171,6 +171,7 @@ func exampleValue() {
 	v.Kind()
 	fmt.Println("reflect.String:", v.Kind() == reflect.String)
 
+}
 	// 返回v是否持有一个值
 	// 如果v是Value零值会返回false，此时v除了IsValid、String、Kind之外的方法都会导致panic
 	// 绝大多数函数和方法都永远不返回Value零值。如果某个函数/方法返回了非法的Value，它的文档必须显式的说明具体情况
