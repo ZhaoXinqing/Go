@@ -26,3 +26,10 @@ ZAB 协议两种基本的模式：崩溃恢复和消息广播
 
 ### ZooKeeper 配置中心如何保证一致性？ ###
 ZooKeeper 是通过 Zab 协议来保证分布式事务的最终一致性。Zab（ZooKeeper Atomic Broadcast，ZooKeeper 原子广播协议）支持崩溃恢复，基于该协议，ZooKeeper 实现了一种主备模式的系统架构来保持集群中各个副本之间数据一致性
+
+
+## zookeeper资源 ##
+https://zookeeper.apache.org/doc/r3.6.1/zookeeperOver.html
+
+【一篇入魂】Zookeeper入门看这篇就够了
+https://blog.csdn.net/jiaodaguan/article/details/103473654

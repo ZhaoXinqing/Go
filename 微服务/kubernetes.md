@@ -58,3 +58,10 @@ Pods的设计可用于支持多进程的协同工作（作为容器），形成�
 **Pod和Controller**
 
 Controller可以创建和管理多个Pod，提供副本管理、滚动升级和集群级别的自愈能力。例如，如果一个Node故障，Controller就能自动将该节点上的Pod调度到其他健康的Node上。
+
+
+## Kubernetes三大落地姿势，你pick谁？ ##
+https://www.kubernetes.org.cn/7774.html
+
+## 发布：“2020行业云原生应用报告指南”，传统企业面临的又一次关键技术抉择 ##
+https://www.kubernetes.org.cn/7862.html

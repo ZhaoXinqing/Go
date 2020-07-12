@@ -1,37 +1,24 @@
 import "container/list"
-//list 包实现了双向链表。要遍历一个链表：
+// list 包实现了一个双向链表，遍历一个链表
 for e := l.Front(); e != nil; e = e.Next() {
 	// do something with e.Value
 }
 
-//与 fmt.Stringer 类似，`error` 类型是一个内建接口：
-type error interface {
-	Error() string
-}
-//通常函数会返回一个 error 值，调用的它的代码应当判断这个错误是否等于 `nil`， 
-//来进行错误处理。error 为 nil 时表示成功；非 nil 的 error 表示错误
+// 通常函数会返回一个 error 值，调用它的代码应该判断这个错误是否等于 `nil`,来进行错误处理
+// error 为 nil 时表示成功，非 nil 的 error 表示错误
 i, err := strconv.Atoi("42")
 if err != nil {
-	fmt.Printf("couldn't conver number: %v\n", err)
+	fmt.Printf("couldn't conver number: %v", err)
 }
-fmt.Println("Converted integer:", i)
+fmt.Println("Converted integer number: %v", i)
 
+// Go 的基本类型
+bool, string
 
-// Go 的基本类型有Basic types
-bool
+int int8 int16 int32(rune, "一个Unicode码") int64
+uint uint8(byte) uint16 uint64 uintptr
 
-string
-
-int int8 int16 int32 int64
-uint uint8 uint16 uint64 uintptr
-
-byte // uint8 的别名
-rune // int32 的别别名
-	// 代表一个Unicode码
-
-float32 float64
-
-complex64 complex128
+float32 float64, complex64 complex128
 
 
 unc main() {
