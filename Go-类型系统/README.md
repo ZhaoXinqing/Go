@@ -5,3 +5,6 @@
 
 ## golang-map是线程安全的吗？
 https://studygolang.com/articles/23184?fr=sidebar
+
+## 深度解密Go语言之map ##
+https://www.cnblogs.com/qcrao-2018/p/10903807.html
