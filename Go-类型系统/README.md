@@ -8,3 +8,6 @@ https://studygolang.com/articles/23184?fr=sidebar
 
 ## 深度解密Go语言之map ##
 https://www.cnblogs.com/qcrao-2018/p/10903807.html
+
+
+**<p align = right> ————事有因才有果，任何事情最终还是要靠自己来解决。**</p>
