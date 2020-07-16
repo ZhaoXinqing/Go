@@ -209,3 +209,13 @@ Manager的作用是将操作的信息记录下来，然后序列化后交给Clus
 ## …… ##
 让你设计一个web框架，你要怎么设计，说一下步骤.
 讲解一下你做过的项目，然后找问题问实现细节。
+
+
+**tcp/ip协议**
+看书--图解tcp/ip，html协议
+
+**网络编程**
+https://blog.csdn.net/qq_41828603/article/details/89248995
+
+**GO语言网络编程**
+https://www.cnblogs.com/aresxin/p/GO-yu-yan-wang-luo-bian-cheng.html
