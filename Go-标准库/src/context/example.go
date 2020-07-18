@@ -19,10 +19,10 @@ func main() {
 	defer cancel()
 
 	// 根据Context和最迟存活时间，返回一个Context副本和一个取消方法，以方便完成工作后释放资源
-	context.WithDeadline(ctx, time.Now().Add(50 * time.Millisecond))
+	context.WithDeadline(ctx, time.Now().Add(50*time.Millisecond))
 
 	// 根据Context和超时时间，返回一个Context副本和一个取消方法，以方便完成工作后释放资源
-	context.WithTimeout(ctx, time.Millisecond * 50)
+	context.WithTimeout(ctx, time.Millisecond*50)
 
 	// 给Context添加自定义类型的键值对，返回一个新的Context
 	context.WithValue(ctx, "language", "Go")

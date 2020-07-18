@@ -1,3 +1,20 @@
+Go是一种新的语言，一种并发的、带垃圾回收的、快速编译的语言。它具有以下特点：
+- [内置并发编程支持](https://www.jianshu.com/p/63dbec263d2a)
+- 使用协程（goroutine）做为基本的计算单元。轻松地创建协程。
+- 使用数据通道（channels）来实现协程间的同步和通信。
+- 内置了映射（map）和切片（slice）类型。
+- [支持多态（polymorphism）](https://blog.csdn.net/jw915086731/article/details/86751334)。
+- 使用接口（interface）来实现装盒（value boxing）和反射（reflection）。
+- [支持指针。](http://c.biancheng.net/view/21.html)
+- 支持函数闭包（closure）。
+- 支持方法。
+- 支持延迟函数调用（defer）。
+- 支持类型内嵌（type embedding）。
+- 支持类型推断（type deduction or type inference）。
+- [内存安全。](https://blog.csdn.net/wenrennaoda/article/details/95935355)
+- 自动垃圾回收。
+- 良好的代码跨平台性。
+
 ## 并发
 独特的MPG的线程模型和CSP并发理念也为Go语言高性能、高并发的特性增分不少；
 https://www.cnblogs.com/qingaoaoo/p/13295835.html
