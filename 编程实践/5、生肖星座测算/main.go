@@ -5,6 +5,12 @@ import (
 	"time"
 )
 
+func main() {
+	y, m, d := GetTimeFromStrDate("1996-04-03")
+	fmt.Println(GetAge(y), GetConstellation(m, d), GetZodiac(y))
+}
+
+// GetTimeFromStrDate example.
 func GetTimeFromStrDate(date string) (year, month, day int) {
 	const shortForm = "2006-01-02"
 	d, err := time.Parse(shortForm, date)
@@ -18,6 +24,7 @@ func GetTimeFromStrDate(date string) (year, month, day int) {
 	return
 }
 
+// GetZodiac example.
 func GetZodiac(year int) (zodiac string) {
 	if year <= 0 {
 		zodiac = "-1"
@@ -63,6 +70,7 @@ func GetZodiac(year int) (zodiac string) {
 	return
 }
 
+// GetAge example.
 func GetAge(year int) (age int) {
 	if year <= 0 {
 		age = -1
@@ -72,6 +80,7 @@ func GetAge(year int) (age int) {
 	return
 }
 
+// GetConstellation example.
 func GetConstellation(month, day int) (star string) {
 	if month <= 0 || month >= 13 {
 		star = "-1"
@@ -117,9 +126,4 @@ func GetConstellation(month, day int) (star string) {
 	}
 
 	return star
-}
-
-func main() {
-	y, m, d := GetTimeFromStrDate("1996-04-03")
-	fmt.Println(GetAge(y), GetConstellation(m, d), GetZodiac(y))
 }
