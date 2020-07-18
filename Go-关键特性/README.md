@@ -6,7 +6,7 @@ Go是一种新的语言，一种并发的、带垃圾回收的、快速编译的
 - [支持多态（polymorphism）](https://blog.csdn.net/jw915086731/article/details/86751334)。
 - 使用接口（interface）来实现装盒（value boxing）和反射（reflection）。
 - [支持指针。](http://c.biancheng.net/view/21.html)
-- 支持函数闭包（closure）。
+- 支持函数闭包（closure）。https://www.cnblogs.com/hzhuxin/p/9199332.html
 - 支持方法。
 - 支持延迟函数调用（defer）。
 - 支持类型内嵌（type embedding）。
