@@ -109,19 +109,17 @@ SSH最初是UNIX系统上的一个程序，后来又迅速扩展到其他操作�
 		302  重定向（未修改 请求的网页未修改，继续使用上次的资源）
 		304  读的是缓存
 	4开头（客户端错误）
-		400（BadRequest）：请求参数有错误(客户端向服务器发请求,但没有按照服务器端的要求传对应的参数)
-		403（Forbidden）：服务器端拒绝访问(权限)
-		404（NotFound）：路径(资源)找不到(客户端请求,服务器找不到路径,返回给客户端的响应)
+		400 bad request，请求报文存在语法错误
+		401 unauthorized，表示发送的请求需要有通过 HTTP 认证的认证信息
+		403 forbidden，表示对请求资源的访问被服务器拒绝
+		404 not found，表示在服务器上没有找到请求的资源
 		405 发送get/post...请求,没有对应的doGet/doPost...方法(没有重写父类的方法)
 	5开头（服务器错误）
-		500（InternalServerError）：服务器内部异常，无法完成请求
+		500（InternalServerError）：服务器内部异常，无法完成请求（可能是用户权限，或者数据库连接，检查下服务器语句）
 		502（BadGetway）：网关错误，一般是服务器压力过大导致连接超时
 		503（ServiceUnavailable）：服务器宕机
 		504：网关超时，服务器作为网关或代理，但是没有及时从上游服务器收到请求。 
 	
-	504和500有什么区别?
-		500：是服务器内部错误（可能是用户权限，或者数据库连接，检查下服务器语句）
-		504：网关超时，不好办的问题，需要专业的人检查不同IP传输的状况；
 
 ## 序列化 ##
 当两个进程进行远程通信时，数据都会以二进制序列的形式在网络上传送；
@@ -219,3 +217,11 @@ https://blog.csdn.net/qq_41828603/article/details/89248995
 
 **GO语言网络编程**
 https://www.cnblogs.com/aresxin/p/GO-yu-yan-wang-luo-bian-cheng.html
+
+
+http get跟head
+HEAD和GET本质是一样的，区别在于HEAD不含有呈现数据，而仅仅是HTTP头信息。有的人可能觉得这个方法没什么用，其实不是这样的。想象一个业务情景：欲判断某个资源是否存在，我们通常使用GET，但这里用HEAD则意义更加明确。
+
+http keep-alive
+client发出的HTTP请求头需要增加Connection:keep-alive字段
+Web-Server端要能识别Connection:keep-alive字段，并且在http的response里指定Connection:keep-alive字段，告诉client，我能提供keep-alive服务，并且"应允"client我暂时不会关闭socket连接

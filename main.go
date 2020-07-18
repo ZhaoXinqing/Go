@@ -1,5 +1,3 @@
-import "container/list"
-
 // list 包实现了一个双向链表，遍历一个链表
 for e := l.Front(); e != nil; e = e.Next() {
 	// do something with e.Value
@@ -13,13 +11,7 @@ if err != nil {
 }
 fmt.Println("Converted integer number: %v", i)
 
-// Go 的基本类型
-bool, string
 
-int int8 int16 int32(rune, "一个Unicode码") int64
-uint uint8(byte) uint16 uint64 uintptr
-
-float32 float64, complex64 complex128
 
 
 unc main() {
