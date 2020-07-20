@@ -15,3 +15,4 @@
 ## 手写洗牌
 
 ## 使用go过程使用踩过什么坑
+https://studygolang.com/articles/16949?fr=sidebar
