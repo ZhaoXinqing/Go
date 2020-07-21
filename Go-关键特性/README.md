@@ -48,4 +48,7 @@ https://www.cnblogs.com/qcrao-2018/p/10903807.html
 默认情况下，Go 语言使用的是值传递，即在调用过程中不会影响到实际参数
 
 
+**强类型的静态编译型语言**
+https://blog.csdn.net/ling12abc/article/details/102993484
+
 **<p align = right> --凡事有因才有果，任何事情最终还是要靠自己来解决。**</p>
