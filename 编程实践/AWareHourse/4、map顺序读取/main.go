@@ -11,10 +11,10 @@ import (
 
 func main() {
 	var m = map[string]int{
-		"hello":   0,
-		"morning": 1,
-		"my":      2,
-		"girl":    3,
+		"d_hello":   0,
+		"a_morning": 1,
+		"b_my":      2,
+		"c_girl":    3,
 	}
 	var keys []string
 	for k := range m {

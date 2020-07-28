@@ -1,1 +1,0 @@
-ERROR: 2020/07/24 14:10:54 main.go:42: Something has failed
