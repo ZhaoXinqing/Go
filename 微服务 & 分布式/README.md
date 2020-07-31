@@ -78,3 +78,7 @@ https://zhuanlan.zhihu.com/p/153105848
 https://www.jianshu.com/p/27a742e349f7
 
 
+## 分布式锁的实现方案：	
+	1、数据库实现（乐观锁）
+	2、基于zookeeper的实现
+	3、基于Redis的实现（推荐）；
