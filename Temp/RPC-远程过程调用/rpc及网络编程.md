@@ -5,7 +5,7 @@ RPC：Remote Procedure Call（远程过程调用）
         - 网络编程必须使用socket吗？Socket本身并不是协议，而是对TCP/IP协议的封装，是一个调用接口（API），通过Socket我们才能使用TCP/IP协议。
         - RPC封装了socket细节
 
-
+    - RPC 本身是 client-server模型,也是一种 request-response 协议。
 
     - 核心：网络传输协议；
         - 要实现一个 RPC，需要选择网络传输的方式。
@@ -75,3 +75,4 @@ RPC：Remote Procedure Call（远程过程调用）
     - 应用场景:
         - RPC 主要用于公司内部的服务调用，性能消耗低，传输效率高，实现复杂。HTTP 主要用于对外的异构环境，浏览器接口调用，App 接口调用，第三方接口调用等。
 
+http://books.studygolang.com/go-rpc-programming-guide/part1/client.html
