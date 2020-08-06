@@ -33,3 +33,5 @@
 
     ## [Uber编码规范](https://github.com/zc2638/go-standard/tree/master/style.md)
     ## <a href="https://github.com/opentracing-contrib/opentracing-specification-zh/blob/master/specification.md" target="_blank">OpenTracing链路追踪规范</a>
+
+**<p align = right> --靠自己**</p>

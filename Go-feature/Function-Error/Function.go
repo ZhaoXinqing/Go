@@ -1,3 +1,154 @@
+// 函数是最基本的代码块，用于执行一个任务。
+// 可以通过函数来划分不同的功能
+// 函数声明告诉了编译器函数的名称，返回类型，和参数；
+// Go 语言标准库提供了多种可动用的内置的函数。例如，
+// 		- len() 函数可以接受不同类型参数并返回该类型的长度。如果我们传入的是字符串则返回字符串的长度，
+// 		- 如果传入的是数组，则返回数组中包含的元素个数。
+
+// 函数定义：
+func function_name([parameter list]) [return_types] {
+	函数体
+}
+// 函数定义解析：
+// 		- func：函数由 func 开始声明
+// 		- function_name：函数名称，函数名和参数列表一起构成了函数签名。
+// 		- parameter list：参数列表，参数就像一个占位符，当函数被调用时，你可以将值传递给参数，这个值被称为实际参数。参数列表指定的是参数类型、顺序、及参数个数。参数是可选的，也就是说函数也可以不包含参数。
+// 		- return_types：返回类型，函数返回一列值。return_types 是该列值的数据类型。有些功能不需要返回值，这种情况下 return_types 不是必须的。
+// 		- 函数体：函数定义的代码集合。
+// 实例：max（）函数，函数返回两个数的最大值 
+func max(num1, num2 int) int {
+	/* 声明局部变量 */
+	var result int
+	if (num1 > num2) {
+		result = num1
+	} else {
+	   result = num2
+	}
+	return result
+}
+
+//  函数调用
+func main() {
+	/* 定义局部变量 */
+	var a int = 100
+	var b int = 200
+	var ret int
+	/* 调用函数并返回最大值 */
+	ret = max(a, b)
+	fmt.Printf( "最大值是 : %d\n", ret )
+}
+
+// 函数返回多个值
+func swap(x, y string) (string, string) {
+	return y, x
+}
+func main() {
+	a, b := swap("Google", "Runoob")
+	fmt.Println(a, b)
+}
+
+// 函数参数
+// 函数如果使用参数，该变量可称为函数的形参。
+// 形参就是定义在函数体内的局部变量。
+// 调用函数，可以通过两种方式来传递参数；
+// 		- 值传递	值传递是指在调用函数时将实际参数复制一份传递到函数中，这样在函数中如果对参数进行修改，将不会影响到实际参数。
+// 		- 引用传递	引用传递是指在调用函数时将实际参数的地址传递到函数中，那么在函数中对参数所进行的修改，将影响到实际参数。
+// 		- 默认情况下，Go 语言使用的是值传递，即在调用过程中不会影响到实际参数。
+// Go 自动处理方法调用时的值和指针之间的转化。你可以使用指针来调用方法来避免在方法调用时产生一个拷贝，
+// 或者让方法能够改变接受的数据。
+
+// 函数的用法：
+// 		1、函数作为另外一个函数的实参，函数定义后可作为另外一个函数的实参数传入
+// 		2、闭包，闭包是匿名函数，可在动态编程中使用
+// 		3、方法，方法就是一个包含了接受者的函数；
+
+// （1）函数作为实参
+// 在定义的函数中初始化一个变量，该函数仅仅是为了使用内置函数 math.sqrt()
+func main(){
+	/* 声明函数变量 */
+	getSquareRoot := func(x float64) float64 {
+	   return math.Sqrt(x)
+	}
+	/* 使用函数 */
+	fmt.Println(getSquareRoot(9))
+}
+// （2）函数实现闭包
+// Go 语言支持匿名函数，可作为闭包。匿名函数是一个"内联"语句或表达式。
+// 匿名函数的额优势在于可以直接使用函数内变量而不用声明；
+// 实例中创建了函数 getSequence() ，返回另外一个函数。该函数的目的是在闭包中递增 i 变量
+func getSequence() func() int {
+	i:=0
+	return func() int {
+	   i+=1
+	  return i  
+	}
+}
+// ……待续
+// Go 支持通过 闭包来使用 匿名函数。匿名函数在你想定义一个不需要命名的内联函数时是很实用的。
+// 由于闭包会使得函数中的变量都被保存在内存中，内存消耗很大，所以不能滥用闭包
+// https://blog.csdn.net/ycy258325/article/details/54632915
+
+// （3）方法
+// go语言中同时有函数和方法，一个方法就是一个包含了接收者的函数，
+// 接受者可以是命名类型或者结构体类型的一个值或者是一个指针
+// 所有给定类型的方法属于该类型的方法集。语法格式如下：
+func (variable_name variable_data_type) function_name() [return_type]{
+	/* 函数体*/
+}
+// 实例：定义一个结构体类型和该类型的一个方法
+type Circle  struct {
+	radius float64
+}
+
+func main() {
+	var c1 Circle
+	c1.radius = 10.00
+	fmt.Println("圆的面积 = ", c1.getArea())
+}
+// 该method 属于 Circle 类型对象中的方法
+func (c Circle) getArea() float64 {
+	return 3.14 * c.radius * c.radius  // c.radius 即为 Circle 类型对象中的属性
+}
+
+// 递归函数
+// 运行过程中调用自己，语法格式：
+func recursion() {
+	recursion() /* 函数调用自身 */
+}
+func main() {
+	recursion()
+}
+// Go 语言支持递归。但我们在使用递归时，开发者需要设置退出条件，否则递归将陷入无限循环中。
+// 递归函数对于解决数学上的问题是非常有用的，就像计算阶乘，生成斐波那契数列等。
+// 实现阶乘：
+func Factorial(n uint64)(result uint64) {
+    if (n > 0) {
+        result = n * Factorial(n-1)
+        return result
+    }
+    return 1
+}
+func main() {  
+    var i int = 15
+    fmt.Printf("%d 的阶乘是 %d\n", i, Factorial(uint64(i)))
+}
+// 实现斐波那契数列
+func fibonacci(n int) int {
+	if n < 2 {
+	 return n
+	}
+	return fibonacci(n-2) + fibonacci(n-1)
+} 
+func main() {
+	var i int
+	for i = 0; i < 10; i++ {
+		fmt.Printf("%d\t", fibonacci(i))
+	}
+}
+//  fibonacci 实现，用到多返回值特性，降低复杂度：
+
+
+// 函数补充：
 // 定义一个包内全局字符串变量
 var str string
 var str = " "
@@ -562,61 +713,3 @@ func main() {
 	}
 	wg.Wait()
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
