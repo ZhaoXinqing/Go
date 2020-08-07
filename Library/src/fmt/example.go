@@ -105,3 +105,72 @@ func main() {
 	// 返回成功扫描的条目个数和遇到的任何错误
 	fmt.Sscanf(str, "%s", "Hello")
 }
+
+// 向外输出（2、格式化占位符；3、获取输入）
+// Print:
+// 		- Print系列函数会将内容输出到系统的标准输出，区别在于Print函数直接输出内容，
+// 		- Printf函数支持格式化输出字符串，
+// 		- Println函数会在输出内容的结尾添加一个换行符。
+
+// Fprint:
+// Fprint系列函数会将内容输出到一个io.Writer接口类型的变量w中，我们通常用这个函数往文件中写入内容。
+// 向标准输出写入内容
+fmt.Fprintln(os.Stdout, "向标准输出写入内容")
+fileObj, err := os.OpenFile("./xx.txt", os.O_CREATE|os.O_WRONLY|os.O_APPEND, 0644)
+if err != nil {
+    fmt.Println("打开文件出错，err:", err)
+    return
+}
+name := "枯藤"
+// 向打开的文件句柄中写入内容
+fmt.Fprintf(fileObj, "往文件中写如信息：%s", name)
+// 注意，只要满足io.Writer接口的类型都支持写入。
+
+// Sprint:
+// 		Sprint系列函数会把传入的数据生成并返回一个字符串。
+
+// 获取输入：
+// Go语言fmt包下有fmt.Scan、fmt.Scanf、fmt.Scanln三个函数，
+// 可以在程序运行过程中从标准输入获取用户的输入。
+// fmt.Scan，函数定签名如下：
+func Scan(a ...interface{})(n int, err error)
+// fmt.Scan从标准输入中扫描用户输入的数据，将以空白符分隔的数据分别存入指定的参数。
+// fmt.Scanf不同于fmt.Scan简单的以空格作为输入数据的分隔符，
+// fmt.Scanf为输入数据指定了具体的输入内容格式，
+// 只有按照格式输入数据才会被扫描并存入对应变量:
+func main() {
+    var (
+        name    string
+        age     int
+        married bool
+    )
+    fmt.Scanf("1:%s 2:%d 3:%t", &name, &age, &married)
+    fmt.Printf("扫描结果 name:%s age:%d married:%t \n", name, age, married)
+}
+// Scanln类似Scan，
+// 它在遇到换行时才停止扫描。最后一个数据后面必须有换行或者到达结束位置。
+
+// bufio.NewReader
+// 有时候我们想完整获取输入的内容，而输入的内容可能包含空格，
+// 这种情况下可以使用bufio包来实现。示例代码如下：
+func bufioDemo() {
+    reader := bufio.NewReader(os.Stdin) // 从标准输入生成读对象
+    fmt.Print("请输入内容：")
+    text, _ := reader.ReadString('\n') // 读到换行
+    text = strings.TrimSpace(text)
+    fmt.Printf("%#v\n", text)
+}
+
+// Fscan系列
+// 这几个函数功能分别类似于fmt.Scan、fmt.Scanf、fmt.Scanln三个函数，
+// 只不过它们不是从标准输入中读取数据而是从io.Reader中读取数据。
+func Fscan(r io.Reader, a ...interface{}) (n int, err error)
+func Fscanln(r io.Reader, a ...interface{}) (n int, err error)
+func Fscanf(r io.Reader, format string, a ...interface{}) (n int, err error)
+
+// Sscan系列
+// 这几个函数功能分别类似于fmt.Scan、fmt.Scanf、fmt.Scanln三个函数，
+// 只不过它们不是从标准输入中读取数据而是从指定字符串中读取数据。
+func Sscan(str string, a ...interface{}) (n int, err error)
+func Sscanln(str string, a ...interface{}) (n int, err error)
+func Sscanf(str string, format string, a ...interface{}) (n int, err error)

@@ -1,3 +1,32 @@
+// 但凡写过代码的人都清楚，只靠这几种数据类型是无法满足业务逻辑需要的，
+// 成熟的语言一定会满足用户自定义数据类型的需要
+
+// 例子：
+
+// 声明：
+type News struct{
+	Title string
+	Content string
+	Data string
+}
+
+// 初始化
+myNews := New{
+	Title:"xxx",
+	Content:"xxxx",
+	Data:"xxx"
+}
+
+// 使用 
+myNews.Title
+
+// struct 函数
+func (new *News)GetTitle(){
+	// body
+}
+
+
+
 // 结构体表示一项记录，比如保存图书馆的书籍记录，每本书有以下属性：
 // 	Title ：标题
 // 	Author ： 作者
