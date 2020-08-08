@@ -11,4 +11,4 @@
 	注释(Comments)
 
 代理设置
-	set GOPROXY=https://goproxy.cn
+	set GOPROXY= https://goproxy.cn

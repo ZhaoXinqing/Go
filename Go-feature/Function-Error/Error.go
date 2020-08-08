@@ -30,6 +30,7 @@ func Sqrt(f float64) (float64, error) {
     }
 }
 
+
 // panic 与 recover 是 Go 的两个内置函数，这两个内置函数用于处理 Go 运行时的错误，
 // panic 用于主动抛出错误，recover 用来捕获 panic 抛出的错误。
 // 引发panic有两种情况，一是程序主动调用，二是程序产生运行时错误，由运行时检测并退出。

@@ -11,6 +11,7 @@ name := make([]byte,length,cpacity)
 numbers == nil
 // true表示空切片，false表示非空切片
 
+
 // 切片同数组相比，最灵活的方面在于切分子切片
 numbers := []int{0,1,2,3,4,5,6,7,8}
 number2 := numbers[:2] // 从0到2，但不包括2.所以是0，1
@@ -44,3 +45,6 @@ numbers := []int{0,1,2,3,4,5,6,7,8}
 for i := range numbers {
 	fmt.Println("Slice item",1,"is",numbers[i])
 }
+
+
+timer.NewTimer(d Duration)
