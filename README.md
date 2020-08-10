@@ -24,4 +24,25 @@ Golang：<br>
         - http://books.studygolang.com/<br>
         - https://www.bajins.com/Go/#flag<br>
 
+## Go语言标准库
+    - http://books.studygolang.com/The-Golang-Standard-Library-by-Example
+    - https://studygolang.com/pkgdoc
+    [**中文版标准库文档**](https://studygolang.com/pkgdoc) | 
+    [**中文版标准库文档2**](http://www.php.cn/manual/view/35126.html)
+    [**《Go入门指南》**](https://github.com/unknwon/the-way-to-go_ZH_CN)
+    [**Mastering Go(玩转Go中文译本)**](https://github.com/hantmac/Mastering_Go_ZH_CN)
+    
+
+
+    go-standard 
+    [Go](https://raw.githubusercontent.com/zc2638/material/master/go/go.png)
+
+    Go常用规范定义，标准库方法使用示例，请注意这不是Go的中文版标准库
+
+    ## [Uber编码规范](https://github.com/zc2638/go-standard/tree/master/style.md)
+    ## <a href="https://github.com/opentracing-contrib/opentracing-specification-zh/blob/master/specification.md" target="_blank">OpenTracing链路追踪规范</a>
+
+**<p align = right> --靠自己**</p>
+
+
 **<p align=right> ———业精于勤，荒于嬉；行成于思，毁于随！ </p>**
