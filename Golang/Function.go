@@ -384,20 +384,7 @@ func deferDemo() error {
 
 // channel 是支持只读只写单向传输的
 
-func main() {
-	defer_call()
-}
-func defer_call() {
-	defer func(){fmt.Println("打印前")}()
-	defer func(){fmt.Println("打印中")}()
-	defer func(){fmt.Println("打印后")}()
-	panic("触发异常")
-}
-// defer 是后进先出，panic需要等到defer结束后才会向上传递
-// 打印后
-// 打印中
-// 打印前
-// panic：触发异常
+
 
 // 以下代码有什么问题
 type student struct {

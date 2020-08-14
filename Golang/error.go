@@ -47,4 +47,18 @@ func Sqrt(f float64) (float64, error) {
 // defer只有在后面的函数体内直接被调用才能捕获panic终止异常，否则返回nil，异常继续向外传递。
 
 
+// defer 是后进先出，panic需要等到defer结束后才会向上传递
+func main() {
+	defer_call()
+}
+func defer_call() {
+	defer func(){fmt.Println("打印前")}()
+	defer func(){fmt.Println("打印中")}()
+	defer func(){fmt.Println("打印后")}()
+	panic("触发异常")
+}
+// 打印后
+// 打印中
+// 打印前
+// panic：触发异常
 

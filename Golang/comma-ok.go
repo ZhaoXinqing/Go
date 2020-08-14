@@ -1,6 +1,8 @@
+// 类型操作有两种：一种是类型转换，一种是类型断言
+// Golang的类型分为两种，一种是静态类型，一种是底层类型
+
 type myString string
-// 通过 type 关键字声明了自己的类型 myString 。
-// 其中 myString 是静态类型，string 则是底层类型；
+// 通过 type 关键字声明了自己的类型 myString ，其中 myString 是静态类型，string 则是底层类型；
 // 如果底层类型相同，则两种类型可以转换成功，反之则失败；
 // 如果不知道底层类型，则可以调用reflect的Kind方法来获取：
 fmt.Printf("%v",reflect.Kind(count))

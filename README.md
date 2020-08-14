@@ -1,11 +1,11 @@
 Golang：<br>
     - 简单、高效、强大<br>
     - Go是一种新的语言，一种并发的、带垃圾回收的、快速编译的语言。它具有以下特点：<br>
-        - 内置并发编程支持(https://www.jianshu.com/p/63dbec263d2a)<br>
+        - 内置并发编程支持
         - 使用协程（goroutine）做为基本的计算单元。轻松地创建协程。<br>
         - 使用通道（channels）来实现协程间的同步和通信。<br>
         - 内置了映射（map）和切片（slice）类型。<br>
-        - 支持多态（polymorphism）(https://blog.csdn.net/jw915086731/article/details/86751334)。<br>
+        - 支持多态（polymorphism）
         - 接口（interface）来实现装盒（value boxing）和反射（reflection）。<br>
         - 支持指针。(http://c.biancheng.net/view/21.html)<br>
         - 闭包（closure）。https://www.cnblogs.com/hzhuxin/p/9199332.html<br>
