@@ -28,7 +28,7 @@ if !ok {
 var t interface{}
 t = functionOfSomeType()
 
-switch t := t.(type) {
+switch t := t.(type) {;xs
 case bool:
 	fmt.Println("boolean %t\n",t)
 case int:
@@ -42,13 +42,3 @@ default:
 }
 // 优点就是可以节省代码，本质和Comma-OK一样
 
-// 综合起来，golang类型转换就是三条规则:
-		// 普通类型向interface{}转换是隐式。
-		// interface{}向普通类型转换必须显示
-		// 强制转换时，最好使用类型断言，防止panic。
-
-	Golang在设计的时候，肯定是参考了目前市面上各种较为流行的语言，统筹考虑之后才变成今天这个样子的。取各家
-		之所长，创自家之风骚。像Golang是大小写敏感的语言，既支持静态类型变量声明(var i int)又支持动态类型变
-		量声明(i := 1)，还支持同时声明多个不同类型的变量(var a, b, c = 3,4,"foo")还有其它语法特点，天知道
-		golang在设计的时候，汲取了多少营养。我们不是编译器大师也不是架构大师，与其吐槽golang的种种不好，不如
-		细细分析golang能否提高自己的职业竞争力。
