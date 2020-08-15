@@ -1,8 +1,7 @@
-// 整形切片初始化
-// s := make([]int) 错误
-s := make([]int, 0)
-s := make([]int, 5, 10)
-s := []int{1, 2, 3, 4, 5}
+
+
+
+
 
 // 切片中删除一个元素
 func (s *Slice) Remove(value interface{}) error {
@@ -76,10 +75,7 @@ var fragment Fragment = &GetPodAction{}
 var fragment Fragment = GetPodAction{}
 
 
-// 正确channel语法
-var ch chan int
-ch := make(chan int)
-<- ch
+
 // ch <-  错误
 
 // 同步锁
@@ -113,17 +109,7 @@ if value != 0
 // B. 在程序部署后，应恢复异常避免程序终止
 // C. 对于不应该出现的分支，使用异常处理
 
-// slice和map操作
-var s []int
-s = append(s,1)
 
-var s []int
-s = make([]int,0)
-s = append(s,1)
-
-var m map[string]int
-m = make(map[string]int)
-m["one"] = 1
 
 // channel
 // A. 给一个 nil channel 发送数据，造成永远阻塞
@@ -131,7 +117,7 @@ m["one"] = 1
 // C. 给一个已经关闭的 channel 发送数据，引起 panic
 // D. 从一个已经关闭的 channel 接收数据，如果缓冲区中为空，则返回一个零值
 
-// 无缓冲的channel是同步的，而有缓冲的channel是非同步的
+
 
 // 关于异常的触发
 // A. 空指针解析
