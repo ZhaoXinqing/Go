@@ -1,0 +1,6 @@
+讲解：https://github.com/zc2638/go-standard）
+标准库：https://studygolang.com/pkgdoc
+
+语言标准库：
+    - http://books.studygolang.com/The-Golang-Standard-Library-by-Example
+    - http://www.php.cn/manual/view/35126.html

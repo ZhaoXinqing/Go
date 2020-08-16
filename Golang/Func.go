@@ -75,3 +75,20 @@ m["one"] = 1
 	// 创建过程会分配内存，指针指向的值为默认值
 
 
+r := bufio.NewReader(f)
+for {
+	line, err := r.ReadString("\n")
+	if err == io.EOF{
+		break
+	} else if err != nil {
+		fmt.Println("error reading file %s\n",err)
+	}
+}
+
+type Reader interface {
+	ReadFrom(r Reader) (n int64,err error)
+}
+
+type ReaderFrom interface {
+	ReadFrom(r Reader) (n int64, err error)
+}

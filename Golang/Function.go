@@ -1,6 +1,30 @@
+// new-make
 
+// new(T) 和 make(T,args) 是 Go 语言内建函数，用来分配内存，但适用的类型不同。
+// new 函数，它返回的永远是类型的指针，指针指向分配类型的内存地址，
+// 		- 适用于值类型，如数组、结构体等。
+// make(T,args) 返回初始化之后的 T 类型的值，这个值并不是 T 类型的零值，也不是指针 *T，是经过初始化之后的 T 的引用。
+// 		- make() 只适用于 slice、map 和 channel.
 
+// new([]int) 之后的 list 是一个 *[]int 类型的指针，不能对指针执行 append 操作
 
+// New 示例：
+var sum *int
+sum = new(int)  // 使用 new 函数为变量分配内存空间
+*sum = 98
+fmt.Println(*sum)
+
+type Student struct {
+	name string
+	age int
+}
+var s *Student
+s = new(Student)  // 使用New为自定义类型（struct，结构体）变量分配空间
+s.name = "dequan"
+fmt.Println(s)
+// 
+// Make 示例
+func make(t Type,size ...InterfaceType) Type
 
 
 // 切片中删除一个元素
