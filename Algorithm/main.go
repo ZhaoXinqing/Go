@@ -1,14 +1,36 @@
-func minimunTotal(tringle [][]int) int {
-	for i, v := range triangle {
-		if i == 0 {
-			continue
-		}
-		for idx, val := range v {
-			if idx == len(v)-1 {
-				triangle[i][idx] = val + triangle[i-1][idx-1]
-				continue
-			}
-		}
-	}
+func main() {
+	r := gin.Default()
 
+	r.GET("/someJSON",func(c *gin.Context){
+		data := map[string]interface{} {
+			"lang":"Go语言",
+			"tag":"<br>",
+		}
+		c.AsciiJSON(http.StatusOK,data)
+	})
+
+	r.Run(":8080")
+}
+
+func main() {
+	router := gin.Default()
+	router.LoadHTMLGlob("templates/*")
+	router.GET("/index",func(c *gin.Context) {
+		c.HTML(htp.StatusOK,"index.tmpl",gin.H{
+			"title":"Main website",
+		})
+	})
+	router.Run(":8080")
+}
+
+var html = template.Must(template.New("https").Parse(
+
+))
+
+func main() {
+	r := gin.Default()
+	r.Static("/assets","./assets")
+	r.SetHTMLTemplate(html)
+
+	r.GET("/",)
 }

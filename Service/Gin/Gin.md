@@ -11,3 +11,5 @@ Gin:
             2.添加 /blog/addXxx POST blog/Xxx
             3.修改 /blog/updateXxx PUT blog/Xxx
             4.删除 /blog/delXxxx DELETE blog/Xxx
+
+Gin 框架中文文档 2019 : https://learnku.com/docs/gin-gonic/2019
