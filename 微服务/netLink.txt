@@ -1,1 +1,7 @@
 ETCD实现技术总结：https://www.jianshu.com/p/d63265949e52
+最终，为什么选择go-kit：https://www.jianshu.com/p/0c34a75569b1
+
+gRPC详解:https://www.jianshu.com/p/9c947d98e192
+
+冲上云原生，Dubbo发布Go版本:https://www.oschina.net/question/3820517_2306822
+    - https://github.com/apache/dubbo-go/blob/master/README_CN.md
