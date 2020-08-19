@@ -1,10 +1,15 @@
-// 递归：重复调用同一个函数过程来解析相同的问题
-func recursion() {
-	resursion()
-}
-fun main() {
-	resursion()
-}
+package main
 
-// 注意退出条件，否则出现死循环
-func 
+import "fmt"
+
+func Factorial(n uint64) (result uint64) {
+	if n > 0 {
+		result = n * Factorial(n-1)
+		return result
+	}
+	return 1
+}
+func main() {
+	var i int = 15
+	fmt.Printf("%d 的阶乘是 %d\n", i, Factorial(uint64(i)))
+}
