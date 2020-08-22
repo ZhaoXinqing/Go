@@ -4,7 +4,7 @@
 中文开源图书、资料或文档:<br>
     - http://books.studygolang.com/<br>
     - https://www.bajins.com/Go/<br>
-
+d
 
 
 编码规范：
@@ -13,5 +13,4 @@
 
 支持指针。(http://c.biancheng.net/view/21.html)<br>
 闭包（closure）。https://www.cnblogs.com/hzhuxin/p/9199332.html<br>
-
-        - [内存安全](https://blog.csdn.net/wenrennaoda/article/details/95935355)<br>
+内存安全(https://blog.csdn.net/wenrennaoda/article/details/95935355)<br>
