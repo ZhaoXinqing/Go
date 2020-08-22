@@ -1,3 +1,5 @@
+WebSocket 和 Socket 的区别：https://zhidao.baidu.com/question/750010189618451132.html
+
 TCP 重传、滑动窗口、流量控制、拥塞控制:https://www.jianshu.com/p/5b07a2f05771
 
 网络编程之socket的运用：https://www.cnblogs.com/xuecaichang/p/9580448.html

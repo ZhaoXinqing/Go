@@ -13,7 +13,7 @@ fmt.Printf("%v",reflect.Kind(count))
 // 这个时候就需要类型断言：共有两种转换方式：
 
 // 第一种：Comma-ok: value, ok := element.(T)
-var a intreface{}
+var a interface{}
 value,ok := a.(string)
 if != ok {
 	fmt.Println("it is not ok for type string")
