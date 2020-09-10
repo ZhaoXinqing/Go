@@ -19,9 +19,6 @@ type Autoapp struct {
 }
 
 //查询
-// 1、判断文件是否存在，没有则创建
-// 2、读文件
-// 3、写出来
 func GetAutostart(w http.ResponseWriter, r *http.Request, params httprouter.Params) {
 	// var result []string
 	type Info struct {
