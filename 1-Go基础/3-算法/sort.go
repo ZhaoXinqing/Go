@@ -163,3 +163,30 @@ func main() {
 	fmt.Println("希尔排序：e", shellSort(e))   // 希尔排序（改进的插入排序，可以对应大规模数据）
 	fmt.Println("归并排序：f", mergeSort(f))   // 归并排序
 }
+
+
+
+func binarySearch(arr []int,a int)int {
+	var low int = 0
+	var height int = len(arr) - 1
+	for low <= height {
+		var mid int = low + (height-low) /2
+		var midValue int = arr[mid]
+		if midValue == a {
+			return mid
+		} else if midValue > a {
+			height = mid -1
+		} else if midValue < a{
+			low = mid + 1
+		}
+	}
+	return - 1
+}
+
+a := []int{1,2,3,4,5,7,8,9,12}
+b := binarySearch(a, 5)
+if b >= 0 {
+	fmt.Println("目标下标值是：", b)
+} else {
+	fmt.Println("查找目标不存在")
+}

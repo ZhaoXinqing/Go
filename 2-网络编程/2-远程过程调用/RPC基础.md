@@ -9,6 +9,20 @@
 ​    (3)主要用于公司内部的服务调用，性能消耗低，传输效率高，但实现比较复杂
 
 
+WebSocket 和 Socket 的区别：https://zhidao.baidu.com/question/750010189618451132.html
+
+TCP 重传、滑动窗口、流量控制、拥塞控制:https://www.jianshu.com/p/5b07a2f05771
+
+网络编程之socket的运用：https://www.cnblogs.com/xuecaichang/p/9580448.html
+
+电脑在生成数据包时是怎么知道对方电脑的ip地址的，（DNS）？
+我们的电脑的数据包应该由谁来帮我们传输呢？（网关），
+网关又是如何帮我们把数据包传输到目的地的？（各种路由协议）
+
+TCP/IP 协议：https://www.jianshu.com/p/9f3e879a4c9c；
+HTTP 协议：https://www.jianshu.com/p/6e9e4156ece3：
+
+
 ## 核心功能
 
 #### 1-服务寻址：

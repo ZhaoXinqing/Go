@@ -92,3 +92,30 @@ type Reader interface {
 type ReaderFrom interface {
 	ReadFrom(r Reader) (n int64, err error)
 }
+
+var c1 chan string = make(chan string)
+func() {
+	time.Sleep(time.Second * 2)
+	c1 <- "result 1"
+}()
+fmt.Println("c1 is",<-c1)
+// 以上代码会死锁，因为push和pull永远不可能发生，
+// 这是阻塞channel的不当用法
+
+// 解决办法————1
+var c1 chan string = make(chan string)
+go func() {
+	time.Sleep(time.Second * 2)
+	c1 <- "result 1"
+}()
+fmt.Println("c1 is",<-c1)
+// 通过在另一个协程中run push 代码，使得channel的生产和消费可以同时对接
+
+// 解决办法————2
+var c1 chan string = make(chan string，1)
+func() {
+	time.Sleep(time.Second * 2)
+	c1 <- "result 1"
+}()
+fmt.Println("c1 is",<-c1)
+// 给channel加一个buffer，只要buffer没用尽，大家就不会阻塞
