@@ -7,7 +7,6 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/Sirupsen/logrus"
 	"github.com/julienschmidt/httprouter"
 )
 
@@ -21,7 +20,6 @@ type Info struct {
 
 // 上传文件
 func Createfile(w http.ResponseWriter, r *http.Request, params httprouter.Params) {
-
 	// 创建路径
 	dirname := params.ByName("dir")
 	path := "/rtfdata/third_party/" + dirname
@@ -58,9 +56,8 @@ func Createfile(w http.ResponseWriter, r *http.Request, params httprouter.Params
 	io.Copy(f, file) //拷贝文件
 }
 
-// 查看文件列表
+// 查看目录
 func Listfile(w http.ResponseWriter, r *http.Request, params httprouter.Params) {
-
 	infos := make([]Info, 0)
 	dir := params.ByName("dir")
 	path := "/rtfdata/third_party/" + dir
@@ -87,15 +84,11 @@ func Listfile(w http.ResponseWriter, r *http.Request, params httprouter.Params) 
 func Getfile(w http.ResponseWriter, r *http.Request, params httprouter.Params) {
 	dir := params.ByName("dir")
 	name := params.ByName("name")
-
 	path := "/rtfdata/third_party/" + dir + "/" + name
-	fmt.Println(path)
 
 	_, err := os.Stat(path)
 	if err != nil {
-		fmt.Println("文件不存在", err)
-		a := "文件不存在"
-		writeResponse(w, a)
+		writeResponse(w, "文件不存在")
 	}
 
 	file, err := os.Open(path)
@@ -106,8 +99,6 @@ func Getfile(w http.ResponseWriter, r *http.Request, params httprouter.Params) {
 
 	_, err = io.Copy(w, file)
 	if err != nil {
-		w.WriteHeader(http.StatusInternalServerError)
-		logrus.Errorf("DownloadAlg copy file error %v", err)
 		return
 	}
 }
@@ -116,19 +107,17 @@ func Getfile(w http.ResponseWriter, r *http.Request, params httprouter.Params) {
 func Deletefile(w http.ResponseWriter, r *http.Request, params httprouter.Params) {
 	dir := params.ByName("dir")
 	name := params.ByName("name")
-
 	path := "/rtfdata/third_party/" + dir + "/" + name
 
-	//判断文件是否存在
+	//判断文件是否存在，并删除
 	_, err := os.Stat(path)
 	if err != nil {
 		fmt.Println("文件不存在", err)
-	}
-
-	// 删除
-	err = os.Remove(path)
-	if err == nil {
-		return
+	} else {
+		err = os.Remove(path)
+		if err == nil {
+			return
+		}
 	}
 }
 
@@ -137,15 +126,14 @@ func Deletedir(w http.ResponseWriter, r *http.Request, params httprouter.Params)
 	dir := params.ByName("dir")
 	path := "/rtfdata/third_party/" + dir
 
-	// 判断目录是否存在
+	// 判断目录是否存在，并删除
 	_, err := os.Stat(path)
 	if err != nil {
 		fmt.Println("目录不存在", err)
-	}
-
-	// 删除目录
-	err = os.RemoveAll(path)
-	if err != nil {
-		return
+	} else {
+		err = os.RemoveAll(path)
+		if err != nil {
+			return
+		}
 	}
 }

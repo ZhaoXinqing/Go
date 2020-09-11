@@ -33,9 +33,6 @@ func GetAutostart(w http.ResponseWriter, r *http.Request, params httprouter.Para
 	// 判断路径是否存在
 	_, err := os.Stat(filename)
 	if err != nil {
-		fmt.Println("该路径不存在", err)
-
-		// 创建目录
 		err := os.MkdirAll("/rtfdata/platform/config", os.ModePerm)
 		if err != nil {
 			fmt.Println("创建目录失败", err)
@@ -47,7 +44,6 @@ func GetAutostart(w http.ResponseWriter, r *http.Request, params httprouter.Para
 			fmt.Println("文件创建失败。")
 			//创建文件失败的原因有：1、路径不存在  2、权限不足  3、打开文件数量超过上限  4、磁盘空间不足等
 		}
-		// defer延迟调用
 		defer fp.Close() //关闭文件，释放资源。
 	}
 
@@ -78,39 +74,28 @@ label1:
 // 添加
 func CreateAutostart(w http.ResponseWriter, r *http.Request, params httprouter.Params) {
 	fields := make([]string, 0)
-
 	// 解析接受参数s
 	name := params.ByName("name")
 	version := params.ByName("version")
-	fmt.Println(name)
-	fmt.Println(version)
 
 	// 判断路径是否存在
 	_, err := os.Stat(filename)
 	if err != nil {
 		fmt.Println("该路径不存在", err)
-
 		// 创建目录
 		err := os.MkdirAll("/rtfdata/platform/config", os.ModePerm)
 		if err != nil {
 			fmt.Println("创建目录失败", err)
 		}
-
 		// 创建文件
 		fp, err := os.Create("/rtfdata/platform/config/autostart.json")
 		if err != nil {
 			fmt.Println("文件创建失败。")
-			//创建文件失败的原因有：
-			//1、路径不存在  2、权限不足  3、打开文件数量超过上限  4、磁盘空间不足等
 		}
-		// defer延迟调用
 		defer fp.Close() //关闭文件，释放资源。
 	}
-	fmt.Println("路径存在")
 
-	// 读取文件中数据，保存为map格式
 	data, _ := ioutil.ReadFile("/rtfdata/platform/config/autostart.json")
-
 	// 判断是否为空值
 	if len(data) == 0 {
 		goto label2
@@ -122,7 +107,7 @@ func CreateAutostart(w http.ResponseWriter, r *http.Request, params httprouter.P
 	}
 
 label2:
-	// 合并map
+	// 合并
 	fields = append(fields, name+":"+version)
 	fmt.Println(fields)
 
