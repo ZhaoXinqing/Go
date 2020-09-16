@@ -3,7 +3,6 @@
 # 透视HTTP协议
 
 ## 名词解释
-
 - HTTP：HyperText Transfer Protocol 超文本传输协议
 - CDN: Content Delivery Network 内容分发网络
 - IP 协议: Internet Protocol
