@@ -21,7 +21,7 @@ func main() {
 		for {
 			v, ok := <-intChan
 			if ok {
-				fmt.Println(v)w
+				fmt.Println(v)
 			} else {
 				exitChan <- true
 				close(exitChan)
