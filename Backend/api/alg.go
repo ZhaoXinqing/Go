@@ -13,9 +13,7 @@ import (
 	"strings"
 	"unicode"
 
-	"github.com/Sirupsen/logrus"
 	"github.com/julienschmidt/httprouter"
-	"github.com/pkg/xattr"
 )
 
 const algPath = "/rtfdata/alg"
