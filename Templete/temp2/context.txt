@@ -1,0 +1,27 @@
+// context库的目的就是跟踪goroutine的调用树，并在这些goroutine 调用树中传递通知和元数据。
+
+// context 包的整体工作机制
+// 第一个创建Context 的goroutine 被称之为root节点。
+
+// root节点负责创建一个实现Context接口的具体对象，并将该对象作为参数传递到其新拉起的goroutine中，
+// 下有的goroutine可以继续封装该对象，再传递到更下游的goroutine。
+
+// Context对象在传递的过程中最终形成一个树状的数据结构，
+// 这样通过位于root节点（树的根节点）的Context对象就能遍历整个Context 对象树，
+// 通知和消息就可以通过root节点传递出去。实现了上游goroutine 对下游goroutine 的消息传递。
+
+/*
+type Context interface {
+	// 如果Context 实现了超时控制，那该方法返回ok true，deadline 为超时时间。
+	Deadline() {deadline time.Time, ok bool}
+
+	// 后端被调用的goroutine应该监听该方法返回的chan， 以便及时释放资源
+	Done() <-chan struct{}
+
+	// Done 返回的chan 收到通知的时候，才可以访问Err() 获知为什么原因被取消
+	Err() error
+
+	// 可以访问上游Goroutine 的值。
+	Value(key interface{}) interface{}
+}
+*/
