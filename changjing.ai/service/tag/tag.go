@@ -1,3 +1,5 @@
-func (h *Handler) GetTag(ctx)  {
-	
+package tag
+
+func (h *Handler) GetTag(ctx) {
+
 }

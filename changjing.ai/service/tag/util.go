@@ -1,3 +1,5 @@
+package tag
+
 import "context"
 
 // DeleteBoardPermission ...
