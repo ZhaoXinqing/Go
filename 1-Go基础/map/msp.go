@@ -1,11 +1,9 @@
-package msp
+package main
 
-import (
+import "fmt"
 
-)
-
-// 判断一个键是否在一个map中；
-if _, ok := fileCreatMap[fieldTitle]; !ok {
-	i++
+func main() {
+	a := []int64{10, 20, 10, 20, 30, 40}
+	a = RemoveRepByMap(a)
+	fmt.Println(a)
 }
-
