@@ -1,8 +1,8 @@
-## map如何顺序读取? ##
+<!-- ## map如何顺序读取? ##
 可以通过sort中的排序包进行对map中的key进行排序
-golang:使用 sort 来排序
+golang:使用 sort 来排序 -->
 
-	package main
+
 	import (
 	    "fmt"
 	    "sort"

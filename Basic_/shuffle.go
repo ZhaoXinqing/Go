@@ -1,10 +1,4 @@
-package main
 
-import (
-	"fmt"
-	"math/rand"
-	"time"
-)
 
 func shuffle(a []int) []int {
 	rand.Seed(time.Now().UnixNano()) //设置种子
