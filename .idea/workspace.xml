@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d065cc01-46bb-4516-b0d7-057fd48d27b6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/tool/Docker/Docker.md" beforeDir="false" afterPath="$PROJECT_DIR$/System/Docker/Docker.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/Docker/云计算之IasS、PasS、SaaS.png" beforeDir="false" afterPath="$PROJECT_DIR$/System/Docker/云计算之IasS、PasS、SaaS.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/Docker/微服务.md" beforeDir="false" afterPath="$PROJECT_DIR$/System/Docker/微服务.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/Kubernetes/Kubernetes Master.png" beforeDir="false" afterPath="$PROJECT_DIR$/System/Kubernetes Master.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/Kubernetes/Kubernetes.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/System/Kubernetes.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/Kubernetes/Kubernets Node.png" beforeDir="false" afterPath="$PROJECT_DIR$/System/Kubernets Node.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/Kubernetes/Zookeeper.md" beforeDir="false" afterPath="$PROJECT_DIR$/System/Zookeeper.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/Kubernetes/k8s.md" beforeDir="false" afterPath="$PROJECT_DIR$/System/k8s.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/Kubernetes/kubernetes-HA.png" beforeDir="false" afterPath="$PROJECT_DIR$/System/kubernetes-HA.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/Kubernetes/kubernetes.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/System/kubernetes.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/Kubernetes/分布式系统.md" beforeDir="false" afterPath="$PROJECT_DIR$/System/分布式系统.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/git/修改commit标签.md" beforeDir="false" afterPath="$PROJECT_DIR$/System/git/修改commit标签.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/temp/model.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/temp/name.md" beforeDir="false" afterPath="$PROJECT_DIR$/tool/temp/name.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/temp2/context.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/temp2/context2.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/temp2/ctrl.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/temp2/index.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_socket/1-基于TCP的网络编程/client/client.go" beforeDir="false" afterPath="$PROJECT_DIR$/internrt/1-基于TCP的网络编程/client/client.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_socket/1-基于TCP的网络编程/server/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/internrt/1-基于TCP的网络编程/server/server.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_socket/RPC基础.md" beforeDir="false" afterPath="$PROJECT_DIR$/internrt/RPC基础.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_socket/Socket-tcp-udp.go" beforeDir="false" afterPath="$PROJECT_DIR$/internrt/Socket-tcp-udp.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_socket/Socket网络编程.md" beforeDir="false" afterPath="$PROJECT_DIR$/internrt/Socket网络编程.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_socket/TCP网络编程.png" beforeDir="false" afterPath="$PROJECT_DIR$/internrt/TCP网络编程.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_socket/gRPC/demo/client/client.go" beforeDir="false" afterPath="$PROJECT_DIR$/internrt/gRPC/demo/client/client.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_socket/gRPC/demo/example/data.proto" beforeDir="false" afterPath="$PROJECT_DIR$/internrt/gRPC/demo/example/data.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_socket/gRPC/demo/server/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/internrt/gRPC/demo/server/server.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_socket/gRPC/gRPC认识.md" beforeDir="false" afterPath="$PROJECT_DIR$/internrt/gRPC/gRPC认识.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_socket/网络分层.png" beforeDir="false" afterPath="$PROJECT_DIR$/internrt/网络分层.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_socket/网络常见问题总结.md" beforeDir="false" afterPath="$PROJECT_DIR$/internrt/网络常见问题总结.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_socket/计算机网络漫谈.md" beforeDir="false" afterPath="$PROJECT_DIR$/internrt/计算机网络漫谈.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_socket/透视HTTP协议.md" beforeDir="false" afterPath="$PROJECT_DIR$/internrt/透视HTTP协议.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="GOROOT" path="/usr/local/go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1loQ1wGoxLG6oVmpAfavtQFfXQU" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.updates" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/System" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/Basic" />
+      <recent name="$PROJECT_DIR$/xiyun" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
+  </component>
+</project>

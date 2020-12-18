@@ -1,0 +1,698 @@
+Index: xiyun/Service/Beego/quickstart/controllers/default.go
+===================================================================
+--- xiyun/Service/Beego/quickstart/controllers/default.go	(revision 3a6ec340c0a091151c6f715e8458e03f9795810b)
++++ xiyun/Service/Beego/quickstart/controllers/default.go	(revision 3a6ec340c0a091151c6f715e8458e03f9795810b)
+@@ -1,15 +0,0 @@
+-package controllers
+-
+-import (
+-	"github.com/astaxie/beego"
+-)
+-
+-type MainController struct {
+-	beego.Controller
+-}
+-
+-func (c *MainController) Get() {
+-	c.Data["Website"] = "beego.me"
+-	c.Data["Email"] = "astaxie@gmail.com"
+-	c.TplName = "index.tpl"
+-}
+Index: xiyun/Service/Beego/quickstart/tests/default_test.go
+===================================================================
+--- xiyun/Service/Beego/quickstart/tests/default_test.go	(revision 3a6ec340c0a091151c6f715e8458e03f9795810b)
++++ xiyun/Service/Beego/quickstart/tests/default_test.go	(revision 3a6ec340c0a091151c6f715e8458e03f9795810b)
+@@ -1,39 +0,0 @@
+-package test
+-
+-import (
+-	"net/http"
+-	"net/http/httptest"
+-	"testing"
+-	"runtime"
+-	"path/filepath"
+-	_ "quickstart/routers"
+-
+-	"github.com/astaxie/beego"
+-	. "github.com/smartystreets/goconvey/convey"
+-)
+-
+-func init() {
+-	_, file, _, _ := runtime.Caller(0)
+-	apppath, _ := filepath.Abs(filepath.Dir(filepath.Join(file, ".." + string(filepath.Separator))))
+-	beego.TestBeegoInit(apppath)
+-}
+-
+-
+-// TestBeego is a sample to run an endpoint test
+-func TestBeego(t *testing.T) {
+-	r, _ := http.NewRequest("GET", "/", nil)
+-	w := httptest.NewRecorder()
+-	beego.BeeApp.Handlers.ServeHTTP(w, r)
+-
+-	beego.Trace("testing", "TestBeego", "Code[%d]\n%s", w.Code, w.Body.String())
+-
+-	Convey("Subject: Test Station Endpoint\n", t, func() {
+-	        Convey("Status Code Should Be 200", func() {
+-	                So(w.Code, ShouldEqual, 200)
+-	        })
+-	        Convey("The Result Should Not Be Empty", func() {
+-	                So(w.Body.Len(), ShouldBeGreaterThan, 0)
+-	        })
+-	})
+-}
+-
+Index: xiyun/Service/基础/Demo-gorm.go
+===================================================================
+--- xiyun/Service/基础/Demo-gorm.go	(revision 3a6ec340c0a091151c6f715e8458e03f9795810b)
++++ xiyun/Service/基础/Demo-gorm.go	(revision 3a6ec340c0a091151c6f715e8458e03f9795810b)
+@@ -1,37 +0,0 @@
+-package main
+-
+-import (
+-	_ "github.com/jinzhu/gorm"
+-	_ "github.com/jinzhu/gorm/dialects/sqlite"
+-)
+-
+-type Product struct {
+-	grom.Model
+-	Code  string
+-	Price uint
+-}
+-
+-func main() {
+-	db, err := grom.Open("sqlite3", "test.db")
+-	if err != nil {
+-		panic("连接数据库失败")
+-	}
+-	defer db.Close()
+-
+-	// 自动迁移模式
+-	db.AutoMigrate(&Product{})
+-
+-	// 创建
+-	db.Create(&Product{Code: "L1212", Price: 1000})
+-
+-	// 读取
+-	var product Product
+-	db.First(&product, 1)                   // 查询 id 为 1 的 product
+-	db.First(&product, "code = ?", "L1212") // 查询 code 为 L1212 的 product
+-
+-	// 更新 （更新product的price为 2000）
+-	db.Model(&product).Update("Price", 2000)
+-
+-	// 删除 （删除 product)
+-	db.Delete(&product)
+-}
+Index: xiyun/Service/基础/Demo-server-client.go
+===================================================================
+--- xiyun/Service/基础/Demo-server-client.go	(revision 3a6ec340c0a091151c6f715e8458e03f9795810b)
++++ xiyun/Service/基础/Demo-server-client.go	(revision 3a6ec340c0a091151c6f715e8458e03f9795810b)
+@@ -1,37 +0,0 @@
+-package main
+-
+-import (
+-	"fmt"
+-	"net/http"
+-)
+-
+-// net/http包,专门用来处理 HTTP 协议的数据
+-
+-// server
+-func sayHi(w http.ResponseWriter, r *http.Request) {
+-	fmt.Println(w, "你好，iris!")
+-}
+-
+-func main() {
+-	http.HandleFun("/", sayHi)
+-	err := http.ListenAndServer(":8080", nil)
+-	if err != nil {
+-		fmt.Println("Http 服务建立失败，err: ", err)
+-		return
+-	}
+-}
+-
+-// client
+-/*
+-func main() {
+-	resp, err := http.Get("http://www.baidu.com/")
+-	if err != nil {
+-		fmt.Println("get failed, err:", err)
+-		return
+-	}
+-	defer resp.Body.Close()
+-	body, err := ioutil.ReadAll(resp.Body)
+-	fmt.Println("%T\n", body)
+-	fmt.Println(string(body))
+-}
+-*/
+Index: xiyun/Service/Gin/Gin.md
+===================================================================
+--- xiyun/Service/Gin/Gin.md	(revision 3a6ec340c0a091151c6f715e8458e03f9795810b)
++++ xiyun/Service/Gin/Gin.md	(revision 3a6ec340c0a091151c6f715e8458e03f9795810b)
+@@ -1,17 +0,0 @@
+-Gin:
+-    - Gin是一个golang的微框架，封装比较优雅，API友好，源码注释比较明确，具有快速灵活，容错方便等特点
+-    - 对于golang而言，web框架的依赖要远比Python，Java之类的要小。自身的net/http足够简单，性能也非常不错
+-    - 借助框架开发，不仅可以省去很多常用的封装带来的时间，也有助于团队的编码风格和形成规范
+-
+-    - Restful风格的API
+-        - gin支持Restful风格的API
+-        - 即Representational State Transfer的缩写。直接翻译的意思是"表现层状态转化"，
+-        - 是一种互联网应用程序的API设计理念：URL定位资源，用HTTP描述操作
+-            1.获取文章 /blog/getXxx Get blog/Xxx
+-            2.添加 /blog/addXxx POST blog/Xxx
+-            3.修改 /blog/updateXxx PUT blog/Xxx
+-            4.删除 /blog/delXxxx DELETE blog/Xxx
+-
+-Gin 框架中文文档 2019 : https://learnku.com/docs/gin-gonic/2019
+-
+-Gin是用Go（Golang）编写的Web框架。他是一个类似于martini但拥有更好性能的API框架，由于httprouter，速度提高了40倍。如果您追求性能和高效的效率，您将会爱上Gin。
+Index: xiyun/Service/Beego/quickstart/go.mod
+===================================================================
+--- xiyun/Service/Beego/quickstart/go.mod	(revision 3a6ec340c0a091151c6f715e8458e03f9795810b)
++++ xiyun/Service/Beego/quickstart/go.mod	(revision 3a6ec340c0a091151c6f715e8458e03f9795810b)
+@@ -1,5 +0,0 @@
+-module quickstart
+-
+-go 1.14
+-
+-require github.com/astaxie/beego v1.12.2
+Index: xiyun/Service/Gin/go.mod
+===================================================================
+--- xiyun/Service/Gin/go.mod	(revision 3a6ec340c0a091151c6f715e8458e03f9795810b)
++++ xiyun/Service/Gin/go.mod	(revision 3a6ec340c0a091151c6f715e8458e03f9795810b)
+@@ -1,15 +0,0 @@
+-module module1
+-
+-go 1.14
+-
+-require (
+-	github.com/gin-gonic/gin v1.6.3
+-	github.com/go-playground/validator/v10 v10.3.0 // indirect
+-	github.com/golang/protobuf v1.4.2 // indirect
+-	github.com/json-iterator/go v1.1.10 // indirect
+-	github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect
+-	github.com/modern-go/reflect2 v1.0.1 // indirect
+-	golang.org/x/sys v0.0.0-20200806060901-a37d78b92225 // indirect
+-	google.golang.org/protobuf v1.25.0 // indirect
+-	gopkg.in/yaml.v2 v2.3.0 // indirect
+-)
+Index: xiyun/Service/基础/HttpRouter基础.md
+===================================================================
+--- xiyun/Service/基础/HttpRouter基础.md	(revision 3a6ec340c0a091151c6f715e8458e03f9795810b)
++++ xiyun/Service/基础/HttpRouter基础.md	(revision 3a6ec340c0a091151c6f715e8458e03f9795810b)
+@@ -1,139 +0,0 @@
+-# HttpRouter
+-
+-#### 1、什么是httprouter
+-
+-`httprouter`谈不上是一个框架，它的性能非常优秀。完全可以用来代替默认的 `ServeMux`。所以比较适合对性能要求高，路由相对简单扁平的业务，或者作为高层HTTP框架的内部模块。
+-
+-httproute内部通过实现一个trie树来提高性能。核心代码就是golang标准库中 http.Handler 接口，在该函数中实现自己的请求路由分发策略。
+-
+-> gorilla/mux也是一个第三方的路由器，但是性能一般
+-
+-#### 2、为什么用httprouter
+-
+-##### 说说net/http的不足：
+-
+-- 不能单独的对请求方法(POST,GET等)注册特定的处理函数
+-- 不支持路由变量参数
+-- 不能自动对Path进行校准
+-- 性能一般、扩展性不足
+-
+-##### httprouter带来哪些便利？
+-
+-- 仅支持`精确匹配`，及只匹配一个模式或不会匹配到任何模式。相对于其他一些mux，例如go原生的 [http.ServerMux](http://golang.org/pkg/net/http/#ServeMux), 会使得一个请求URL匹配多个模式，从而需要有优先级顺序，例如最长匹配、最先匹配等等。
+-- 不需要关心URL`结尾的斜杠`
+-- 路径自动归一化和矫正
+-- 零内存分配、高性能
+-
+-#### 3、httprouter路由匹配
+-
+-##### net/http的路由匹配
+-
+-```go
+-//	/api,可以访问到
+-//	/api/,不可以
+-http.HandleFunc("/api",func(w http.ResponseWriter,r *http.Request){
+-	fmt.Println("/api")
+-})
+-
+-//	/api,可以
+-//	/api/,也可以
+-http.HandleFunc("/api/",func(w http.ResponseWriter,r *http.Request){
+-	fmt.Println("/api")
+-})
+-```
+-
+-##### httprouter的路径匹配规则
+-
+-两个路由命名捕获方式：（==路由命名的捕获，不是路由参数的捕获==）
+-
+-- `:name` named parameter (只能根据路由命名进行捕获)
+-- `*name` catch-all parameter (*表示捕获任意内容)
+-
+-其中`:name`的捕获方式是匹配内容直到下一个斜线或者路径的结尾。例如要为如下路径注册 handler:
+-
+-```go
+-Path: /blog/:category/:post  
+-router.GET("/blog/:category/:post", Hello) //（category/post可以看成是一个变量）
+-	
+-当请求路径为：
+-/blog/go/request-routers            match: category="go", post="request-routers"
+-/blog/go/request-routers/           no match, but the router would redirect
+-/blog/go/                           no match
+-/blog/go/request-routers/comments   no match
+-```
+-
+-`*name`的捕获方式是从指定位置开始 (包含前缀 "/") 匹配到结尾：
+-
+-```go
+-Path: /files/*filepath     */
+-router.GET("/files/*filepath", Hello) //filepath可以看成是一个变量
+-
+-当请求路径为：
+-/files/                             match: filepath="/"
+-/files/LICENSE                      match: filepath="/LICENSE"
+-/files/templates/article.html       match: filepath="/templates/article.html"
+-/files                              no match, but the router would redirect
+-```
+-
+-#### 4、httprouter重定向
+-
+-```go
+-func New() *Router {
+-	return &Router{
+-		//是否启用自动重定向。
+-        //比如请求/foo/,但是只有/foo的handler，则httprouter内部使用301重定向到/foo进行GET处理。
+-        //查看浏览器可以看到301的请求，可以看到请求头的location:/foo
+-        
+-        //直接get，然后响应一个字符串，这里的文本类型是text/plain，其实就是txt文件
+-        //这也就为什么，只有/foo的handler时，请求/foo/会404，因为/foo/代表着foo目录，默认会请求/foo/index.html，不就404了
+-        RedirectTrailingSlash:  true,
+-        
+-	RedirectFixedPath:      true,
+-		
+-        HandleMethodNotAllowed: true,
+-		
+-        //如果启用，则路由器会自动回复OPTIONS请求
+-        HandleOPTIONS:          true,
+-	}
+-}
+-```
+-
+-#### 5、lookup
+-
+-```go
+-func (r *Router) Lookup(method, path string) (Handle, Params, bool)
+-```
+-
+-Lookup根据method+path检索对应的Handle，以及Params，并可以通过第三个返回值判断是否会进行重定向。
+-
+-#### 6、关于参数
+-
+-除了路由参数，还有URL的`query`参数，也就是`?a=b&c=d`这样的格式
+-
+-##### query参数
+-
+-```go
+-//url参数解析
+-http.HandleFunc("/api/", func(w http.ResponseWriter, r *http.Request) {
+-    values := r.URL.Query()
+-    fmt.Println(values)
+-})
+-
+-//result
+-//http://127.0.0.1:9090/api/?a=1&b=2&c=3
+-//map[a:[1] b:[2] c:[3]]
+-复制代码
+-```
+-
+-##### 路由参数
+-
+-```go
+-//使用场景有哪些呢？？
+-/users/123
+-/users/456
+-/users/23456
+-比如有很多用户，如上，我们需要为一个个用户去注册路由？显然不现实
+-这时就可以使用路由参数了，/users/id
+-复制代码
+-```
+-
+Index: xiyun/Service/Gin/log/log.go
+===================================================================
+--- xiyun/Service/Gin/log/log.go	(revision 3a6ec340c0a091151c6f715e8458e03f9795810b)
++++ xiyun/Service/Gin/log/log.go	(revision 3a6ec340c0a091151c6f715e8458e03f9795810b)
+@@ -1,54 +0,0 @@
+-package log
+-
+-import (
+-
+-)
+-
+-func main() {
+-    // 禁用控制台颜色，当你将日志写入到文件的时候，你不需要控制台颜色
+-    gin.DisableConsoleColor()
+-​
+-    // 写入日志文件
+-    f, _ := os.Create("gin.log")
+-    gin.DefaultWriter = io.MultiWriter(f)
+-​
+-    // 如果你需要同时写入日志文件和控制台上显示，使用下面代码
+-    // gin.DefaultWriter = io.MultiWriter(f, os.Stdout)
+-​
+-    router := gin.Default()
+-    router.GET("/ping", func(c *gin.Context) {
+-        c.String(200, "pong")
+-    })
+-​
+-    router.Run(":8080")
+-}
+-
+-// 自定义日志格式
+-// func main() {
+-    router := gin.New()
+-​
+-    // LoggerWithFormatter 中间件会将日志写入 gin.DefaultWriter
+-    // 默认 gin.DefaultWriter = os.Stdout
+-    router.Use(gin.LoggerWithFormatter(func(param gin.LogFormatterParams) string {
+-​
+-        // 你的自定义格式
+-        return fmt.Sprintf("%s - [%s] \"%s %s %s %d %s \"%s\" %s\"\n",
+-                param.ClientIP,
+-                param.TimeStamp.Format(time.RFC1123),
+-                param.Method,
+-                param.Path,
+-                param.Request.Proto,
+-                param.StatusCode,
+-                param.Latency,
+-                param.Request.UserAgent(),
+-                param.ErrorMessage,
+-        )
+-    }))
+-    router.Use(gin.Recovery())
+-​
+-    router.GET("/ping", func(c *gin.Context) {
+-        c.String(200, "pong")
+-    })
+-​
+-    router.Run(":8080")
+-}
+\ No newline at end of file
+Index: xiyun/Service/Beego/quickstart/main.go
+===================================================================
+--- xiyun/Service/Beego/quickstart/main.go	(revision 3a6ec340c0a091151c6f715e8458e03f9795810b)
++++ xiyun/Service/Beego/quickstart/main.go	(revision 3a6ec340c0a091151c6f715e8458e03f9795810b)
+@@ -1,11 +0,0 @@
+-package main
+-
+-import (
+-	_ "quickstart/routers"
+-	"github.com/astaxie/beego"
+-)
+-
+-func main() {
+-	beego.Run()
+-}
+-
+Index: xiyun/Service/Gin/main.go
+===================================================================
+--- xiyun/Service/Gin/main.go	(revision 3a6ec340c0a091151c6f715e8458e03f9795810b)
++++ xiyun/Service/Gin/main.go	(revision 3a6ec340c0a091151c6f715e8458e03f9795810b)
+@@ -1,22 +0,0 @@
+-package main
+-
+-import (
+-	"net/http"
+-
+-	"github.com/gin-gonic/gin"
+-)
+-
+-func main() {
+-	// 1.创建路由
+-	r := gin.Default() // 默认已经连接了 Logger and Recovery 中间件
+-	// r := gin.New()	  // 默认没有中间件的空白Gin
+-
+-	// 2.绑定路由的规则，执行的函数
+-	// gin.Context.封装了request和response
+-	r.GET("/", func(c *gin.Context) {
+-		c.String(http.StatusOK, "hello World!")
+-	})
+-	// 3.监听端口，默认在8080
+-	// Run("里面不指定端口号默认为8080")
+-	r.Run(":8080")
+-}
+Index: xiyun/Service/Beego/orm/mysql.go
+===================================================================
+--- xiyun/Service/Beego/orm/mysql.go	(revision 3a6ec340c0a091151c6f715e8458e03f9795810b)
++++ xiyun/Service/Beego/orm/mysql.go	(revision 3a6ec340c0a091151c6f715e8458e03f9795810b)
+@@ -1,28 +0,0 @@
+-package orm
+-
+-import (
+-
+-)
+-
+-type User struct {
+-	ID int `orm:"column(id)"`
+-	Name string `orm:"column(name)"`
+-}
+-
+-func init() {
+-	orm.RegisterModel(new(User))
+-	orm.RegisterDriver("mysql",orm.DRMySQL)
+-	orm.RegisterDataBase("default","mysql","root:123456@tcp(127.0.0.1:3306)/beego?charset=utf8")
+-}
+-
+-
+-func main() {
+-	orm.RunSyncdb("default",false,true)
+-	o := orm.NewOrm()
+-	o.Using("default")
+-
+-	user := new(User)
+-	user.Name = "mike"
+-
+-	o.Insert(user)
+-}
+\ No newline at end of file
+Index: xiyun/Service/Beego/node.md
+===================================================================
+--- xiyun/Service/Beego/node.md	(revision 3a6ec340c0a091151c6f715e8458e03f9795810b)
++++ xiyun/Service/Beego/node.md	(revision 3a6ec340c0a091151c6f715e8458e03f9795810b)
+@@ -1,11 +0,0 @@
+- beego 有八大模块，每个可以独立引用，可以不止只做web服务；可以使用 cache 模块来做缓存逻辑；使用日志模块来记录你的操作信息；使用 config 模块来解析各种格式的文件;
+-
+- Redis集群：当时腾讯云只有单机版redis连接数有上限，还没有集群版redis，现在有了，所以我当时用 twitter 开源的 twemproxy 搭建了一套 redis 集群，解决高并发时的缓存读取问题。
+-
+- Go 的开发速度仅次于 python，运行速度仅次于 c++，而且基本语法就有30多种，相当好学，虽然没有类，但是结构体也可以当做类使用，beego就是最好的栓释。
+-
+- beego作为一个 mvc 框架，自带 swagger 接口文档，整个写起来的愉悦感和 php 的 laravel，最好的 php 框架一样。这是非常好用的一个功能，尤其现在项目都是前后端分离，业务迭代快，api 文档来不及写就全靠口述，有了这个功能方便很多，我写好代码一上传前端，就可以自己去调了。
+-
+- Beego 是一个很优秀的框架，得益于 GO 语言的天然优势：轻量级的协程、无限的并发、Channel的CSP式编程，当然可能没有万能的框架，只有更适合的框架，用好框架对我们的业务提升和效率是非常有帮助的，请让我们一起来用好 Beego 写出更多的高质量的代码吧，加油 ！
+-
+- Beego 是一个很优秀的框架，得益于 GO 语言的天然优势：轻量级的协程、无限的并发、Channel的CSP式编程，当然可能没有万能的框架，只有更适合的框架，用好框架对我们的业务提升和效率是非常有帮助的，请让我们一起来用好 Beego 写出更多的高质量的代码吧，加油 ！
+\ No newline at end of file
+Index: xiyun/Service/Beego/quickstart/static/js/reload.min.js
+===================================================================
+--- xiyun/Service/Beego/quickstart/static/js/reload.min.js	(revision 3a6ec340c0a091151c6f715e8458e03f9795810b)
++++ xiyun/Service/Beego/quickstart/static/js/reload.min.js	(revision 3a6ec340c0a091151c6f715e8458e03f9795810b)
+@@ -1,1 +0,0 @@
+-function b(a){var c=new WebSocket(a);c.onclose=function(){setTimeout(function(){b(a)},2E3)};c.onmessage=function(){location.reload()}}try{if(window.WebSocket)try{b("ws://localhost:12450/reload")}catch(a){console.error(a)}else console.log("Your browser does not support WebSockets.")}catch(a){console.error("Exception during connecting to Reload:",a)};
+Index: xiyun/Service/Beego/quickstart/routers/router.go
+===================================================================
+--- xiyun/Service/Beego/quickstart/routers/router.go	(revision 3a6ec340c0a091151c6f715e8458e03f9795810b)
++++ xiyun/Service/Beego/quickstart/routers/router.go	(revision 3a6ec340c0a091151c6f715e8458e03f9795810b)
+@@ -1,10 +0,0 @@
+-package routers
+-
+-import (
+-	"quickstart/controllers"
+-	"github.com/astaxie/beego"
+-)
+-
+-func init() {
+-    beego.Router("/", &controllers.MainController{})
+-}
+Index: xiyun/Service/Gin/Router/router.go
+===================================================================
+--- xiyun/Service/Gin/Router/router.go	(revision 3a6ec340c0a091151c6f715e8458e03f9795810b)
++++ xiyun/Service/Gin/Router/router.go	(revision 3a6ec340c0a091151c6f715e8458e03f9795810b)
+@@ -1,31 +0,0 @@
+-// gin 框架中采用的路由库是基于httprouter做的
+-package Router
+-
+-import (
+-	"github.com/gin-gonic/gin"
+-)
+-
+-func main() {
+-	router := gin.Default() // 默认已经连接了 Logger and Recovery 中间件
+-	// router := gin.New()	// 默认没有中间件的空白Gin
+-
+-	// 简单的路由组：v1
+-	v1 := router.Group("/v1")
+-	{
+-		v1.POST("/login", loginEndpoint)
+-		v1.POST("/sunmit", submitEndpoint)
+-		v1.POST("/read", readEndpoint)
+-	}
+-
+-	// 简单的路由组：v2
+-	v2 := router.Group("/v2")
+-	{
+-		v2.POST("/login", loginEndpoint)
+-		v2.POST("/sunmit", submitEndpoint)
+-		v2.POST("/read", readEndpoint)
+-	}
+-
+-	// 默认在 8080 端口启动服务，除非定义了一个 PORT 的环境变量。
+-	router.Run()
+-	// router.Run(":3000") hardcode 端口号
+-}
+Index: xiyun/Service/基础/RESTful.md
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>## api：\n\u200B    - 应用项目接口（Application Program Interface)\n\u200B    - 随处可见\n\u200B    - 提供一个软件到另一个的连接；\n\u200B    - 由请求和响应构成；\n\n## REST：\n    资源（Resources）\n        - 网络上的一个实体（一段文本、一张图片、一首歌曲、一种服务），要获取这个资源，访问这个资源对应的URI就可以；\n        - URI只代表资源的实体，不代表它的形式。只代表\"资源\"的位置；\n    表现层（Representation）\n        \"资源\"具体呈现出来的形式（文本txt格式、HTML、XML、JSON、二进制格式，图片JPG格式、PNG格式）\n        它的具体表现形式，在HTTP请求的头信息中用 `Accept` 和 `Content-Type` 字段指定，这两个字段才是对\"表现层\"的描述。\n    状态转化（State Transfer）\n        - 客户端和服务器的一个互动过程，涉及到的数据和状态的变化。\n        \n    - 综述\n    　　（1）每一个URI代表一种资源；\n    　　（2）客户端和服务器之间，传递这种资源的某种表现层；\n    　　（3）客户端通过四个HTTP动词，对服务器端资源进行操作，实现\"表现层状态转化\"。\n    \n## HTTP methods：\n    get:获取特定资源\n    post:提交……\n    put：更新……\n    delete：删除……\n\n    head：不返回body的get\n    options：返回支持的http方法\n    patch:更新部分资源\n\n*RESTful架构一种互联网软件架构模式，它结构清晰、符合标准、易于理解、扩展方便；*\n\n\n
+===================================================================
+--- xiyun/Service/基础/RESTful.md	(revision 3a6ec340c0a091151c6f715e8458e03f9795810b)
++++ 基础/RESTful.md	(date 1608260949806)
+@@ -1,20 +1,19 @@
+ ## api：
+-​    - 应用项目接口（Application Program Interface)
+-​    - 随处可见
+-​    - 提供一个软件到另一个的连接；
+-​    - 由请求和响应构成；
++- 应用项目接口（Application Program Interface)
++- 随处可见
++- 提供一个软件到另一个的连接；
++- 由请求和响应构成；
+ 
+ ## REST：
+-    资源（Resources）
+-        - 网络上的一个实体（一段文本、一张图片、一首歌曲、一种服务），要获取这个资源，访问这个资源对应的URI就可以；
+-        - URI只代表资源的实体，不代表它的形式。只代表"资源"的位置；
+-    表现层（Representation）
++    1、资源（Resources）
++        网络上的一个实体（一段文本、一张图片、一首歌曲、一种服务），要获取这个资源，访问这个资源对应的URI就可以；
++        URI只代表资源的实体，不代表它的形式。只代表"资源"的位置；
++    2、表现层（Representation）
+         "资源"具体呈现出来的形式（文本txt格式、HTML、XML、JSON、二进制格式，图片JPG格式、PNG格式）
+         它的具体表现形式，在HTTP请求的头信息中用 `Accept` 和 `Content-Type` 字段指定，这两个字段才是对"表现层"的描述。
+-    状态转化（State Transfer）
+-        - 客户端和服务器的一个互动过程，涉及到的数据和状态的变化。
+-        
+-    - 综述
++    3、状态转化（State Transfer）
++        - 客户端和服务器的一个互动过程，涉及到的数据和状态的变化。 
++    综述：
+     　　（1）每一个URI代表一种资源；
+     　　（2）客户端和服务器之间，传递这种资源的某种表现层；
+     　　（3）客户端通过四个HTTP动词，对服务器端资源进行操作，实现"表现层状态转化"。
+Index: changjing.ai/JWK.md
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>### [什么是 JWT -- JSON WEB TOKEN](https://www.jianshu.com/p/576dbf44b2ae)\n\n\nJson web token (JWT), 是为了在网络应用环境间传递声明而执行的一种基于JSON的开放标准（(RFC 7519).该token被设计为紧凑且安全的，特别适用于分布式站点的单点登录（SSO）场景。JWT的声明一般被用来在身份提供者和服务提供者间传递被认证的用户身份信息，以便于从资源服务器获取资源，也可以增加一些额外的其它业务逻辑所必须的声明信息，该token也可直接被用于认证，也可被加密。\n\n### 一、基于session认证:\n\n\u200B    1、通常而言session都是保存在内存中，而随着认证用户的增多，服务端的开销会明显增大\n\u200B    2、因为是基于cookie来进行用户识别的, cookie如果被截获，用户就会很容易受到跨站请求伪造的攻击。\n\n### 二、基于token的鉴权机制：\n\n基于token的鉴权机制类似于http协议也是无状态的，流程上是这样的：\n\n1. 用户使用用户名密码来请求服务器\n2. 服务器进行验证用户的信息\n3. 服务器通过验证发送给用户一个token\n4. 客户端存储token，并在每次请求时附送上这个token值\n5. 服务端验证token值，并返回数据\n\ntoken必须要在每次请求时传递给服务端，它应该保存在请求头里，另外，服务端要支持CORS(跨来源资源共享)策略
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- changjing.ai/JWK.md	(revision 3a6ec340c0a091151c6f715e8458e03f9795810b)
++++ changjing.ai/JWK.md	(date 1608261720651)
+@@ -1,4 +1,4 @@
+-### [什么是 JWT -- JSON WEB TOKEN](https://www.jianshu.com/p/576dbf44b2ae)
++### 什么是 JWT -- JSON WEB TOKEN
+ 
+ 
+ Json web token (JWT), 是为了在网络应用环境间传递声明而执行的一种基于JSON的开放标准（(RFC 7519).该token被设计为紧凑且安全的，特别适用于分布式站点的单点登录（SSO）场景。JWT的声明一般被用来在身份提供者和服务提供者间传递被认证的用户身份信息，以便于从资源服务器获取资源，也可以增加一些额外的其它业务逻辑所必须的声明信息，该token也可直接被用于认证，也可被加密。
+Index: .idea/Golang.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/Golang.iml	(date 1608260949877)
++++ .idea/Golang.iml	(date 1608260949877)
+@@ -0,0 +1,9 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="WEB_MODULE" version="4">
++  <component name="Go" enabled="true" />
++  <component name="NewModuleRootManager">
++    <content url="file://$MODULE_DIR$" />
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: .idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/modules.xml	(date 1608260949882)
++++ .idea/modules.xml	(date 1608260949882)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/.idea/Golang.iml" filepath="$PROJECT_DIR$/.idea/Golang.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/vcs.xml	(date 1608260949886)
++++ .idea/vcs.xml	(date 1608260949886)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+diff --git xiyun/api/auto.go api/auto.go
+rename from xiyun/api/auto.go
+rename to api/auto.go
+diff --git xiyun/api/alg.go api/alg.go
+rename from xiyun/api/alg.go
+rename to api/alg.go
+diff --git xiyun/Service/基础/cURL.md 基础/cURL.md
+rename from xiyun/Service/基础/cURL.md
+rename to 基础/cURL.md
+diff --git Basic/4-demo/2-并发/main.md Basic/2-并发/main.md
+rename from Basic/4-demo/2-并发/main.md
+rename to Basic/2-并发/main.md
+diff --git Basic/4-demo/2-并发/concurrent.go Basic/2-并发/concurrent.go
+rename from Basic/4-demo/2-并发/concurrent.go
+rename to Basic/2-并发/concurrent.go
+diff --git Basic/4-demo/2-并发/main.go Basic/2-并发/main.go
+rename from Basic/4-demo/2-并发/main.go
+rename to Basic/2-并发/main.go
+diff --git xiyun/Service/基础/Json.md 基础/Json.md
+rename from xiyun/Service/基础/Json.md
+rename to 基础/Json.md
+diff --git Basic/4-demo/10-生肖星座测算/main.go Basic/10-生肖星座测算/main.go
+rename from Basic/4-demo/10-生肖星座测算/main.go
+rename to Basic/10-生肖星座测算/main.go
+diff --git Basic/4-demo/2-并发/工作池/main.go Basic/2-并发/工作池/main.go
+rename from Basic/4-demo/2-并发/工作池/main.go
+rename to Basic/2-并发/工作池/main.go
+diff --git Basic/4-demo/5-生产消费模型/main.go Basic/5-生产消费模型/main.go
+rename from Basic/4-demo/5-生产消费模型/main.go
+rename to Basic/5-生产消费模型/main.go
+diff --git xiyun/api/app.go api/app.go
+rename from xiyun/api/app.go
+rename to api/app.go
+diff --git xiyun/api/server.go api/server.go
+rename from xiyun/api/server.go
+rename to api/server.go
+diff --git xiyun/api/file.go api/file.go
+rename from xiyun/api/file.go
+rename to api/file.go
