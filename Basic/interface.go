@@ -1,3 +1,7 @@
+package Basic
+
+import "fmt"
+
 func interface2String(inter interface{}) {
 
 	switch inter.(type) {

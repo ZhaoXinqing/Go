@@ -1,3 +1,5 @@
+package changjing_ai
+
 import (
 	"context"
 	"fmt"

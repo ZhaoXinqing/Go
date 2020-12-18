@@ -1,4 +1,4 @@
-package main
+package changjing_ai
 
 import "fmt"
 

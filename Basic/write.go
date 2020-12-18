@@ -1,4 +1,4 @@
-package main
+package Basic
 
 import (
 	"fmt"
@@ -7,96 +7,96 @@ import (
 	"sync"
 )
 
-// 将字符串写到文件
-func main() {
-	f, err := os.Create("test.txt") // 如果已存在，则截断这个文件，返回一个文件描述符
-	if err != nil {
-		fmt.Println(err)
-		return
-	}
-	l, err := f.WriteString("Hello World")
-	if err != nil {
-		fmt.Println(err)
-		f.Close()
-		return
-	}
-	fmt.Println(1, "bytes written successfully")
-	err = f.Close()
-	if err != nil {
-		fmt.Println(err)
-		return
-	}
-}
+//// 将字符串写到文件
+//func main() {
+//	f, err := os.Create("test.txt") // 如果已存在，则截断这个文件，返回一个文件描述符
+//	if err != nil {
+//		fmt.Println(err)
+//		return
+//	}
+//	l, err := f.WriteString("Hello World")
+//	if err != nil {
+//		fmt.Println(err)
+//		f.Close()
+//		return
+//	}
+//	fmt.Println(1, "bytes written successfully")
+//	err = f.Close()
+//	if err != nil {
+//		fmt.Println(err)
+//		return
+//	}
+//}
 
-// 将字节写入文件
-func main() {
-	f, err := os.Creat("/home/naveen/bytes")
-	if err != nil {
-		fmt.Println(err)
-		return
-	}
-	d2 := []byte{104, 101, 108, 108, 132, 191, 111, 114, 108, 100}
-	n2, err := f.Write(d2)
-	if err != nil {
-		fmt.Println(err)
-		f.Close()
-		return
-	}
-	fmt.Println(n2, "bytes written successfully")
-	err = f.Close()
-	if err != nil {
-		fmt.Println(err)
-	}
-}
+//// 将字节写入文件
+//func main() {
+//	f, err := os.Creat("/home/naveen/bytes")
+//	if err != nil {
+//		fmt.Println(err)
+//		return
+//	}
+//	d2 := []byte{104, 101, 108, 108, 132, 191, 111, 114, 108, 100}
+//	n2, err := f.Write(d2)
+//	if err != nil {
+//		fmt.Println(err)
+//		f.Close()
+//		return
+//	}
+//	fmt.Println(n2, "bytes written successfully")
+//	err = f.Close()
+//	if err != nil {
+//		fmt.Println(err)
+//	}
+//}
 
-// 将文件一行一行的写入文件
-func main() {
-	f, err := os.Create("lines")
-	if err != nil {
-		fmt.Println(err)
-		f.Close()
-		return
-	}
-	d := []string{"Welcome to the world of Go", "Go is a compiled language.", "It is easy to learn Go."}
-	for _, v := range d {
-		fmt.Fprintln(f, v)
-		if err != nil {
-			fmt.Println(err)
-			return
-		}
-	}
-	err = f.Close()
-	if err != nil {
-		fmt.Println(err)
-		return
-	}
-	fmt.Println("file written successfully")
-}
+//// 将文件一行一行的写入文件
+//func main() {
+//	f, err := os.Create("lines")
+//	if err != nil {
+//		fmt.Println(err)
+//		f.Close()
+//		return
+//	}
+//	d := []string{"Welcome to the world of Go", "Go is a compiled language.", "It is easy to learn Go."}
+//	for _, v := range d {
+//		fmt.Fprintln(f, v)
+//		if err != nil {
+//			fmt.Println(err)
+//			return
+//		}
+//	}
+//	err = f.Close()
+//	if err != nil {
+//		fmt.Println(err)
+//		return
+//	}
+//	fmt.Println("file written successfully")
+//}
 
-// 追加到文件
-func main() {
-	f, err := os.OpenFile("lines", os.O_APPEND|os.O_WRONLY, 0644)
-	if err != nil {
-		fmt.Println(err)
-		return
-	}
-	newLine := "File handing is easy."
-
-	_, err = fmt.Fprintln(f, newline)
-	if err != nil {
-		fmt.Println(err)
-		f.Close()
-		return
-	}
-	err = f.Close()
-	if err != nil {
-		if err != nil {
-			fmt.Println(err)
-			return
-		}
-		fmt.Println("file appended successfully")
-	}
-}
+//// 追加到文件
+//func main() {
+//	f, err := os.OpenFile("lines", os.O_APPEND|os.O_WRONLY, 0644)
+//	if err != nil {
+//		fmt.Println(err)
+//		return
+//	}
+//	newLine := "File handing is easy."
+//
+//	_, err = fmt.Fprintln(f, newline)
+//	if err != nil {
+//		fmt.Println(err)
+//		f.Close()
+//		return
+//	}
+//	err = f.Close()
+//	if err != nil {
+//		if err != nil {
+//			fmt.Println(err)
+//			return
+//		}
+//		fmt.Println("file appended successfully")
+//	}
+//}
 
 // 并发写文件
 func produce(data chan int, wg *sync.WaitGroup) {
@@ -127,26 +127,27 @@ func consume(data chan int, done chan bool) {
 	}
 	done <- true
 }
-func main() {
-	data := make(chan int)
-	done := make(chan bool)
-	wg := sync.WaitGroup{}
-	for i := 0; i < 100; i++ {
-		wg.Add(1)
-		go produce(data & wg)
-	}
-	go consume(data, done)
-	go func() {
-		wg.Wait()
-		close(data)
-	}()
-	d := <-done
-	if d == true {
-		fmt.Println("File written successfully")
-	} else {
-		fmt.Println("File writing failed")
-	}
-}
+
+//func main() {
+//	data := make(chan int)
+//	done := make(chan bool)
+//	wg := sync.WaitGroup{}
+//	for i := 0; i < 100; i++ {
+//		wg.Add(1)
+//		go produce(data & wg)
+//	}
+//	go consume(data, done)
+//	go func() {
+//		wg.Wait()
+//		close(data)
+//	}()
+//	d := <-done
+//	if d == true {
+//		fmt.Println("File written successfully")
+//	} else {
+//		fmt.Println("File writing failed")
+//	}
+//}
 
 // Golang的OpenFile函数写入默认是追加的
 

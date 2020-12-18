@@ -1,14 +1,13 @@
+package changjing_ai
+
 // 函数将变量作为参数：Function1(recv)
 // 方法在变量上被调用：recv.Method1()
 // 接收者必须有一个显式的名字，这个名字必须在方法中被使用。
 // receiver_type 叫做 （接收者）基本类型，这个类型必须在和方法同样的包中被声明。
 
-package main
-
 import (
 	"fmt"
 )
-
 
 // func (a int) Add (b int){    //方法非法！不能是内置数据类型
 //   fmt.Println(a+b)
