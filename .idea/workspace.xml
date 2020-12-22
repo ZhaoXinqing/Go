@@ -1,120 +1,120 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
+    <expand />
     <select />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d065cc01-46bb-4516-b0d7-057fd48d27b6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Basic/binarySearch_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basic/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basic/shuffle_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basic/slice_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/errCollection/pointer.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Default_Changelist.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Default_Changelist/shelved.patch" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basic/4-demo/10-生肖星座测算/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/file/10-生肖星座测算/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basic/4-demo/2-并发/concurrent.go" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/file/2-并发/concurrent.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basic/4-demo/2-并发/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/file/2-并发/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basic/4-demo/2-并发/main.md" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/file/2-并发/main.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basic/4-demo/2-并发/工作池/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/file/2-并发/工作池/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basic/4-demo/5-生产消费模型/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/file/5-生产消费模型/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basic/Func.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basic/Function.go" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/Function.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basic/arr_map.go" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/arr_map.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basic/binarySearch.go" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/binarySearch.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basic/enhanceGenerate.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basic/fidir.go" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/fidir.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basic/generate.go" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/generate.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basic/int_string_float.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basic/Function.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basic/arr_map.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basic/binarySearch.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basic/binarySearch_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basic/fidir.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basic/file/10-生肖星座测算/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/10-生肖星座测算/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basic/file/2-并发/concurrent.go" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/2-并发/concurrent.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basic/file/2-并发/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/2-并发/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basic/file/2-并发/main.md" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/2-并发/main.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basic/file/2-并发/工作池/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/2-并发/工作池/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basic/file/5-生产消费模型/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/5-生产消费模型/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basic/file/切片.md" beforeDir="false" afterPath="$PROJECT_DIR$/file/切片.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basic/file/排序算法复杂度.md" beforeDir="false" afterPath="$PROJECT_DIR$/file/排序算法复杂度.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basic/file/文件目录删除.md" beforeDir="false" afterPath="$PROJECT_DIR$/file/文件目录删除.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basic/file/文件读取.md" beforeDir="false" afterPath="$PROJECT_DIR$/file/文件读取.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basic/file/树.md" beforeDir="false" afterPath="$PROJECT_DIR$/file/树.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basic/file/算法基础.md" beforeDir="false" afterPath="$PROJECT_DIR$/file/算法基础.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basic/file/递归和迭代.md" beforeDir="false" afterPath="$PROJECT_DIR$/file/递归和迭代.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basic/generate.go" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Basic/interface.go" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/interface.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basic/isCompleteTree.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basic/map.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basic/mapOrder.go" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/mapOrder.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basic/reverse.go" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/reverse.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basic/shuffle.go" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/shuffle.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basic/slice.go" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/slice.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basic/sort.go" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/search.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basic/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basic/mapOrder.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basic/reverse.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basic/search.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basic/shuffle.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basic/shuffle_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basic/slice.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basic/slice_test.go" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Basic/tree-m-r-l.go" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/tree-m-r-l.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Basic/write.go" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/write.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basic/切片.md" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/file/切片.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basic/排序算法复杂度.md" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/file/排序算法复杂度.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basic/文件目录删除.md" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/file/文件目录删除.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basic/文件读取.md" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/file/文件读取.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basic/树.md" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/file/树.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basic/算法基础.md" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/file/算法基础.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basic/递归和迭代.md" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/file/递归和迭代.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changjing.ai/Bingo.go" beforeDir="false" afterPath="$PROJECT_DIR$/changjing.ai/Bingo.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changjing.ai/JWK.md" beforeDir="false" afterPath="$PROJECT_DIR$/changjing.ai/file/JWK.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changjing.ai/Jenkinsfile.md" beforeDir="false" afterPath="$PROJECT_DIR$/changjing.ai/file/Jenkinsfile.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changjing.ai/Makefile.md" beforeDir="false" afterPath="$PROJECT_DIR$/changjing.ai/file/Makefile.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changjing.ai/board.go" beforeDir="false" afterPath="$PROJECT_DIR$/changjing.ai/board.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changjing.ai/consterror.go" beforeDir="false" afterPath="$PROJECT_DIR$/changjing.ai/consterror.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changjing.ai/controller/contain.go" beforeDir="false" afterPath="$PROJECT_DIR$/changjing.ai/contain.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changjing.ai/controller/handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/changjing.ai/handler.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changjing.ai/controller/sql.go" beforeDir="false" afterPath="$PROJECT_DIR$/changjing.ai/file/sql.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changjing.ai/data_service.go" beforeDir="false" afterPath="$PROJECT_DIR$/changjing.ai/data_service.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changjing.ai/for.go" beforeDir="false" afterPath="$PROJECT_DIR$/changjing.ai/for.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changjing.ai/func_method.go" beforeDir="false" afterPath="$PROJECT_DIR$/changjing.ai/func_method.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changjing.ai/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/changjing.ai/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changjing.ai/method.md" beforeDir="false" afterPath="$PROJECT_DIR$/changjing.ai/file/method.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changjing.ai/pointer.go" beforeDir="false" afterPath="$PROJECT_DIR$/changjing.ai/pointer.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changjing.ai/range.go" beforeDir="false" afterPath="$PROJECT_DIR$/changjing.ai/range.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changjing.ai/slice.go" beforeDir="false" afterPath="$PROJECT_DIR$/changjing.ai/slice.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changjing.ai/tag.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/changjing.ai/user.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/changjing.ai/util.go" beforeDir="false" afterPath="$PROJECT_DIR$/changjing.ai/util.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internrt/RPC基础.md" beforeDir="false" afterPath="$PROJECT_DIR$/internrt/file/RPC基础.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internrt/Socket网络编程.md" beforeDir="false" afterPath="$PROJECT_DIR$/internrt/file/Socket网络编程.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internrt/TCP网络编程.png" beforeDir="false" afterPath="$PROJECT_DIR$/internrt/file/TCP网络编程.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internrt/gRPC/demo/client/client.go" beforeDir="false" afterPath="$PROJECT_DIR$/internrt/demo/client/client.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internrt/gRPC/demo/example/data.proto" beforeDir="false" afterPath="$PROJECT_DIR$/internrt/demo/example/data.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internrt/gRPC/demo/server/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/internrt/demo/server/server.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internrt/gRPC/gRPC认识.md" beforeDir="false" afterPath="$PROJECT_DIR$/internrt/file/gRPC认识.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internrt/网络分层.png" beforeDir="false" afterPath="$PROJECT_DIR$/internrt/file/网络分层.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internrt/网络常见问题总结.md" beforeDir="false" afterPath="$PROJECT_DIR$/internrt/file/网络常见问题总结.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internrt/计算机网络漫谈.md" beforeDir="false" afterPath="$PROJECT_DIR$/internrt/file/计算机网络漫谈.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internrt/透视HTTP协议.md" beforeDir="false" afterPath="$PROJECT_DIR$/internrt/file/透视HTTP协议.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/Service/Beego/node.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/Service/Beego/orm/mysql.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/Service/Beego/quickstart/conf/app.conf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/Service/Beego/quickstart/controllers/default.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/Service/Beego/quickstart/go.mod" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/Service/Beego/quickstart/go.sum" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/Service/Beego/quickstart/main.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/Service/Beego/quickstart/routers/router.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/Service/Beego/quickstart/static/js/reload.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/Service/Beego/quickstart/tests/default_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/Service/Beego/quickstart/views/index.tpl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/Service/Gin/Gin.md" beforeDir="false" afterPath="$PROJECT_DIR$/webServer/file/Gin.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/Service/Gin/Router/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/webServer/router.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/Service/Gin/go.mod" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/Service/Gin/go.sum" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/Service/Gin/log/log.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/Service/Gin/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/webServer/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/Service/基础/Demo-gorm.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/Service/基础/Demo-server-client.go" beforeDir="false" afterPath="$PROJECT_DIR$/webServer/Demo-server-client.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/Service/基础/HttpRouter基础.md" beforeDir="false" afterPath="$PROJECT_DIR$/webServer/file/HttpRouter基础.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/Service/基础/Json.md" beforeDir="false" afterPath="$PROJECT_DIR$/webServer/file/Json.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/Service/基础/RESTful.md" beforeDir="false" afterPath="$PROJECT_DIR$/webServer/file/RESTful.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/Service/基础/cURL.md" beforeDir="false" afterPath="$PROJECT_DIR$/webServer/file/cURL.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/api/alg.go" beforeDir="false" afterPath="$PROJECT_DIR$/webServer/alg.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/api/app.go" beforeDir="false" afterPath="$PROJECT_DIR$/webServer/app.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/api/auto.go" beforeDir="false" afterPath="$PROJECT_DIR$/webServer/auto.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/api/file.go" beforeDir="false" afterPath="$PROJECT_DIR$/webServer/file.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/api/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/webServer/server.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/System/Docker/Docker.md" beforeDir="false" afterPath="$PROJECT_DIR$/file/System/Docker.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/System/Docker/云计算之IasS、PasS、SaaS.png" beforeDir="false" afterPath="$PROJECT_DIR$/file/System/云计算之IasS、PasS、SaaS.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/System/Docker/微服务.md" beforeDir="false" afterPath="$PROJECT_DIR$/file/System/微服务.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/System/Kubernetes Master.png" beforeDir="false" afterPath="$PROJECT_DIR$/file/System/Kubernetes Master.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/System/Kubernetes.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/file/System/Kubernetes.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/System/Kubernets Node.png" beforeDir="false" afterPath="$PROJECT_DIR$/file/System/Kubernets Node.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/System/Zookeeper.md" beforeDir="false" afterPath="$PROJECT_DIR$/file/System/Zookeeper.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/System/git/修改commit标签.md" beforeDir="false" afterPath="$PROJECT_DIR$/file/System/修改commit标签.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/System/k8s.md" beforeDir="false" afterPath="$PROJECT_DIR$/file/System/k8s.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/System/kubernetes-HA.png" beforeDir="false" afterPath="$PROJECT_DIR$/file/System/kubernetes-HA.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/System/kubernetes.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/file/System/kubernetes.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/System/分布式系统.md" beforeDir="false" afterPath="$PROJECT_DIR$/file/System/分布式系统.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changjing.ai/Bingo.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/changjing.ai/board.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/changjing.ai/consterror.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/changjing.ai/contain.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/changjing.ai/data_service.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/changjing.ai/file/JWK.md" beforeDir="false" afterPath="$PROJECT_DIR$/file/JWK.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changjing.ai/file/Jenkinsfile.md" beforeDir="false" afterPath="$PROJECT_DIR$/file/Jenkinsfile.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changjing.ai/file/Makefile.md" beforeDir="false" afterPath="$PROJECT_DIR$/file/Makefile.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changjing.ai/file/method.md" beforeDir="false" afterPath="$PROJECT_DIR$/file/method.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changjing.ai/file/sql.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/changjing.ai/for.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/changjing.ai/func_method.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/changjing.ai/handler.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/changjing.ai/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/changjing.ai/pointer.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/changjing.ai/range.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/changjing.ai/slice.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/changjing.ai/util.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/internrt/1-基于TCP的网络编程/client/client.go" beforeDir="false" afterPath="$PROJECT_DIR$/internet/1-基于TCP的网络编程/client/client.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internrt/1-基于TCP的网络编程/server/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/internet/1-基于TCP的网络编程/server/server.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internrt/Socket-tcp-udp.go" beforeDir="false" afterPath="$PROJECT_DIR$/internet/Socket-tcp-udp.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internrt/demo/client/client.go" beforeDir="false" afterPath="$PROJECT_DIR$/internet/demo/client/client.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internrt/demo/example/data.proto" beforeDir="false" afterPath="$PROJECT_DIR$/internet/demo/example/data.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internrt/demo/server/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/internet/demo/server/server.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internrt/file/RPC基础.md" beforeDir="false" afterPath="$PROJECT_DIR$/file/RPC基础.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internrt/file/Socket网络编程.md" beforeDir="false" afterPath="$PROJECT_DIR$/file/Socket网络编程.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internrt/file/TCP网络编程.png" beforeDir="false" afterPath="$PROJECT_DIR$/file/TCP网络编程.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internrt/file/gRPC认识.md" beforeDir="false" afterPath="$PROJECT_DIR$/file/gRPC认识.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internrt/file/网络分层.png" beforeDir="false" afterPath="$PROJECT_DIR$/file/网络分层.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internrt/file/网络常见问题总结.md" beforeDir="false" afterPath="$PROJECT_DIR$/file/网络常见问题总结.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internrt/file/计算机网络漫谈.md" beforeDir="false" afterPath="$PROJECT_DIR$/file/计算机网络漫谈.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internrt/file/透视HTTP协议.md" beforeDir="false" afterPath="$PROJECT_DIR$/file/透视HTTP协议.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/Plugin.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/iris.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/iris/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/log.go" beforeDir="false" afterPath="$PROJECT_DIR$/log.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/sh_aoi_3w.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/temp/name.md" beforeDir="false" afterPath="$PROJECT_DIR$/file/word.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/temp/node.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/temp/planar.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/temp3/Git_order.md" beforeDir="false" afterPath="$PROJECT_DIR$/file/Git_order.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/temp3/Gossip.md" beforeDir="false" afterPath="$PROJECT_DIR$/file/Gossip.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/temp3/Horizontal.md" beforeDir="false" afterPath="$PROJECT_DIR$/file/Horizontal.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/temp3/MySQL-Note.md" beforeDir="false" afterPath="$PROJECT_DIR$/file/MySQL-Note.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/temp3/Vertical.md" beforeDir="false" afterPath="$PROJECT_DIR$/file/Vertical.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/temp3/method.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/temp3/缓存，补.md" beforeDir="false" afterPath="$PROJECT_DIR$/file/缓存，补.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webServer/Demo-server-client.go" beforeDir="false" afterPath="$PROJECT_DIR$/webServer/Demo-server-client.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webServer/alg.go" beforeDir="false" afterPath="$PROJECT_DIR$/webServer/alg.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webServer/app.go" beforeDir="false" afterPath="$PROJECT_DIR$/webServer/app.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webServer/auto.go" beforeDir="false" afterPath="$PROJECT_DIR$/webServer/auto.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webServer/file.go" beforeDir="false" afterPath="$PROJECT_DIR$/webServer/file.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webServer/file/Gin.md" beforeDir="false" afterPath="$PROJECT_DIR$/file/Gin.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webServer/file/HttpRouter基础.md" beforeDir="false" afterPath="$PROJECT_DIR$/file/HttpRouter基础.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webServer/file/Json.md" beforeDir="false" afterPath="$PROJECT_DIR$/file/Json.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webServer/file/RESTful.md" beforeDir="false" afterPath="$PROJECT_DIR$/file/RESTful.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webServer/file/cURL.md" beforeDir="false" afterPath="$PROJECT_DIR$/file/cURL.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webServer/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/webServer/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webServer/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/webServer/router.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webServer/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/webServer/server.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +133,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1loQ1wGoxLG6oVmpAfavtQFfXQU" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -141,7 +141,9 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
@@ -158,14 +160,34 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/webServer" />
-      <recent name="$PROJECT_DIR$/webServer/基础" />
-      <recent name="$PROJECT_DIR$/web" />
-      <recent name="$PROJECT_DIR$/internrt" />
-      <recent name="$PROJECT_DIR$/internrt/file" />
+      <recent name="$PROJECT_DIR$/changjing.ai" />
+      <recent name="$PROJECT_DIR$/file" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/Basic" />
+      <recent name="$PROJECT_DIR$/System" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.Test_shuffle in shuffle_test.go">
+  <component name="RunManager" selected="Go Test.Test_insertSort02 in search_test.go">
+    <configuration name="TestFindDir in fidir_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="Golang" />
+      <working_directory value="$PROJECT_DIR$/Basic" />
+      <framework value="gotest" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/Basic/fidir_test.go" />
+      <pattern value="^\QTestFindDir\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestRemoveRepByMap in slice_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="Golang" />
+      <working_directory value="$PROJECT_DIR$/Basic" />
+      <framework value="gotest" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/Basic/slice_test.go" />
+      <pattern value="^\QTestRemoveRepByMap\E$" />
+      <method v="2" />
+    </configuration>
     <configuration name="Test_BubbleSort in binarySearch_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="Golang" />
       <working_directory value="$PROJECT_DIR$/Basic" />
@@ -176,24 +198,14 @@
       <pattern value="^\QTest_BubbleSort\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="Test_binarySearch in binarySearch_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="Test_insertSort02 in search_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="Golang" />
       <working_directory value="$PROJECT_DIR$/Basic" />
       <framework value="gotest" />
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/Basic/binarySearch_test.go" />
-      <pattern value="^\QTest_binarySearch\E$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Test_bubbleSort in binarySearch_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="Golang" />
-      <working_directory value="$PROJECT_DIR$/Basic" />
-      <framework value="gotest" />
-      <kind value="FILE" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/Basic/binarySearch_test.go" />
-      <pattern value="^\QTest_bubbleSort\E$" />
+      <filePath value="$PROJECT_DIR$/Basic/search_test.go" />
+      <pattern value="^\QTest_insertSort02\E$" />
       <method v="2" />
     </configuration>
     <configuration name="Test_shuffle in shuffle_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -208,10 +220,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.Test_insertSort02 in search_test.go" />
+        <item itemvalue="Go Test.TestRemoveRepByMap in slice_test.go" />
+        <item itemvalue="Go Test.TestFindDir in fidir_test.go" />
         <item itemvalue="Go Test.Test_shuffle in shuffle_test.go" />
         <item itemvalue="Go Test.Test_BubbleSort in binarySearch_test.go" />
-        <item itemvalue="Go Test.Test_bubbleSort in binarySearch_test.go" />
-        <item itemvalue="Go Test.Test_binarySearch in binarySearch_test.go" />
       </list>
     </recent_temporary>
   </component>
@@ -239,25 +252,30 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="这是什么commit？" />
-    <option name="LAST_COMMIT_MESSAGE" value="这是什么commit？" />
+    <MESSAGE value="这次的提交修改内容有点多" />
+    <option name="LAST_COMMIT_MESSAGE" value="这次的提交修改内容有点多" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1878" height="287" key="GridCell.Tab.0.bottom" timestamp="1608275164732">
+    <state x="2277" y="134" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1608608981240">
       <screen x="1680" y="-62" width="1920" height="1055" />
     </state>
-    <state width="1878" height="287" key="GridCell.Tab.0.bottom/0.25.1680.969/1680.-62.1920.1055@1680.-62.1920.1055" timestamp="1608275164732" />
-    <state width="1878" height="287" key="GridCell.Tab.0.center" timestamp="1608275164731">
+    <state x="2277" y="134" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.25.1680.969/1680.-62.1920.1055@1680.-62.1920.1055" timestamp="1608608981240" />
+    <state width="1878" height="287" key="GridCell.Tab.0.bottom" timestamp="1608279970653">
       <screen x="1680" y="-62" width="1920" height="1055" />
     </state>
-    <state width="1878" height="287" key="GridCell.Tab.0.center/0.25.1680.969/1680.-62.1920.1055@1680.-62.1920.1055" timestamp="1608275164731" />
-    <state width="1878" height="287" key="GridCell.Tab.0.left" timestamp="1608275164731">
+    <state width="1878" height="287" key="GridCell.Tab.0.bottom/0.25.1680.969/1680.-62.1920.1055@1680.-62.1920.1055" timestamp="1608279970653" />
+    <state width="1878" height="287" key="GridCell.Tab.0.center" timestamp="1608279970652">
       <screen x="1680" y="-62" width="1920" height="1055" />
     </state>
-    <state width="1878" height="287" key="GridCell.Tab.0.left/0.25.1680.969/1680.-62.1920.1055@1680.-62.1920.1055" timestamp="1608275164731" />
-    <state width="1878" height="287" key="GridCell.Tab.0.right" timestamp="1608275164732">
+    <state width="1878" height="287" key="GridCell.Tab.0.center/0.25.1680.969/1680.-62.1920.1055@1680.-62.1920.1055" timestamp="1608279970652" />
+    <state width="1878" height="287" key="GridCell.Tab.0.left" timestamp="1608279970652">
       <screen x="1680" y="-62" width="1920" height="1055" />
     </state>
-    <state width="1878" height="287" key="GridCell.Tab.0.right/0.25.1680.969/1680.-62.1920.1055@1680.-62.1920.1055" timestamp="1608275164732" />
+    <state width="1878" height="287" key="GridCell.Tab.0.left/0.25.1680.969/1680.-62.1920.1055@1680.-62.1920.1055" timestamp="1608279970652" />
+    <state width="1878" height="287" key="GridCell.Tab.0.right" timestamp="1608279970653">
+      <screen x="1680" y="-62" width="1920" height="1055" />
+    </state>
+    <state width="1878" height="287" key="GridCell.Tab.0.right/0.25.1680.969/1680.-62.1920.1055@1680.-62.1920.1055" timestamp="1608279970653" />
     <state x="2305" y="172" width="670" height="676" key="search.everywhere.popup" timestamp="1608274939494">
       <screen x="1680" y="-62" width="1920" height="1055" />
     </state>

@@ -1,1 +1,0 @@
-Context 是一个客户端在服务器的 "中间人对象"。一个新的 Context 是从每一个连接的一个 sync.Pool中获取的。 Context 是 Iris 的HTTP流上最重要的东西。开发者通过一个 Context 发送客户端请求的响应。开发者也从Context 中获取客户端请求的信息。

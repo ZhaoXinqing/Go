@@ -1,4 +1,4 @@
-package Basic
+package basic
 
 import (
 	"fmt"
@@ -8,6 +8,10 @@ import (
 )
 
 //// 将字符串写到文件
+func StringToFile(str, file string) {
+
+}
+
 //func main() {
 //	f, err := os.Create("test.txt") // 如果已存在，则截断这个文件，返回一个文件描述符
 //	if err != nil {
