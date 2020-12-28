@@ -55,3 +55,19 @@ error：failed to push some refs to。
 这个问题是因为远程库与本地库不一致造成的，那么我们把远程库同步到本地库就可以了。 
 使用指令
 git pull --rebase origin master
+
+
+## git修改未push和已经push的注释信息
+
+1、修改还未push的注释：
+git commit --amend
+修改后保存退出。
+
+2、刚刚push到远端还没有人其他人下载或改动的：
+git commit --amend
+进入修改页面修改注释信息，修改后:wq保存退出。
+再使用git push --force-with-lease origin master
+
+3、如果其他人已经下载或改动：
+git fetch origin
+git reset --hard origin/master

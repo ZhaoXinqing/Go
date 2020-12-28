@@ -12,5 +12,3 @@ Look at this generation, with all of its electronic devices and multita-sking. I
 <p align= "right"> ————索罗斯谈 </p>
 
 现在只管学习提升自己就行了，一些成长需要强大的经历刺激才能够激发出来，小打小闹式的收获太浅薄。并且刺激大多难以遇到，遇到需要珍惜。
-
-                   					 ———— 业精于勤，荒于嬉；行成于思，毁于随！
