@@ -71,3 +71,12 @@ git commit --amend
 3、如果其他人已经下载或改动：
 git fetch origin
 git reset --hard origin/master
+
+## commit message 的规范写作：
+1、更好的表达代码意图
+2、加速 code review 速度
+3、基于一定准则的情况下，可以快速筛选特定的 commit message
+4、帮助新同学或者未来的自己，快速建立上下文
+
+fix, fix bug, update,
+http://www.ruanyifeng.com/blog/2016/01/commit_message_change_log.html
