@@ -1,8 +1,7 @@
-package basic
+package base
 
 import (
 	"fmt"
-	"io/ioutil"
 	"strings"
 )
 
@@ -41,8 +40,8 @@ func reverseString(s string) string {
 	return string(runes)
 }
 
-// reverseSlice 切片反序
-func reverseSlice(s []byte) []byte {
+// ReverseSlice 切片反序
+func ReverseSlice(s []byte) []byte {
 	for i, j := 0, len(s)-1; i < j; i, j = i+1, j-1 {
 		s[i], s[j] = s[j], s[i]
 	}
@@ -61,15 +60,15 @@ func reverseWords(s string) string {
 	return strings.Join(es1, " ")
 }
 
-//快速排序
-func QuickSort(arr []int) []int {
+// QuickSort 快速排序
+func QuickSort(arr []int64) []int64 {
 	if len(arr) <= 1 {
 		return arr
 	}
 	splitData := arr[0]
-	low := make([]int, 0, 0)
-	height := make([]int, 0, 0)
-	mid := make([]int, 0, 0)
+	low := make([]int64, 0, 0)
+	height := make([]int64, 0, 0)
+	mid := make([]int64, 0, 0)
 	mid = append(mid, splitData)
 	for i := 1; i < len(arr); i++ {
 		if arr[i] < splitData {
@@ -337,20 +336,20 @@ func BubbleSort(arr []int) []int {
 }
 
 // FindDir 遍历文件夹
-func FindDir(dir string, num int) interface{} {
-	fileInfo, err := ioutil.ReadDir(dir)
-	if err != nil {
-		panic(err)
-	}
-	var a interface{}
-	for _, fi := range fileInfo {
-		a, _ = fmt.Printf(strings.Repeat("\t", num))
-		if fi.IsDir() {
-			a, _ = fmt.Printf(`目录：`, fi.Name())
-			FindDir(dir+`/`+fi.Name(), num+1)
-		} else {
-			a, _ = fmt.Printf(`文件：`, fi.Name())
-		}
-	}
-	return a
-}
+// func FindDir(dir string, num int) interface{} {
+// 	fileInfo, err := ioutil.ReadDir(dir)
+// 	if err != nil {
+// 		panic(err)
+// 	}
+// 	var a interface{}
+// 	for _, fi := range fileInfo {
+// 		a, _ = fmt.Printf(strings.Repeat("\t", num))
+// 		if fi.IsDir() {
+// 			a, _ = fmt.Printf(`目录：`, fi.Name())
+// 			FindDir(dir+`/`+fi.Name(), num+1)
+// 		} else {
+// 			a, _ = fmt.Printf(`文件：`, fi.Name())
+// 		}
+// 	}
+// 	return a
+// }

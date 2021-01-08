@@ -6,38 +6,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d065cc01-46bb-4516-b0d7-057fd48d27b6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/aries.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/file/technology_in_a_word.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/interface_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/language_basics.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/performance_tuning.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geos/calculation.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/file/Gin.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/file/Git_order.md" beforeDir="false" afterPath="$PROJECT_DIR$/file/git_github.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/file/Gossip.md" beforeDir="false" afterPath="$PROJECT_DIR$/file/Gossip.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/file/JWK.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/file/Jenkinsfile.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/file/Json.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/file/Makefile.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/file/RESTful.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/file/RPC基础.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/file/TCP网络编程.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/file/Vertical.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/file/切片.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/file/排序算法复杂度.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/file/文件读取.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/file/树.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/file/算法基础.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/file/缓存，补.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/file/网络分层.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/file/网络常见问题总结.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/file/计算机网络漫谈.md" beforeDir="false" afterPath="$PROJECT_DIR$/file/计算机网络漫谈.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/file/递归和迭代.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webServer/Demo-server-client.go" beforeDir="false" afterPath="$PROJECT_DIR$/webServer/Demo-server-client.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webServer/alg.go" beforeDir="false" afterPath="$PROJECT_DIR$/webServer/alg.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webServer/app.go" beforeDir="false" afterPath="$PROJECT_DIR$/webServer/app.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webServer/auto.go" beforeDir="false" afterPath="$PROJECT_DIR$/webServer/auto.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webServer/file.go" beforeDir="false" afterPath="$PROJECT_DIR$/webServer/file.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webServer/main.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webServer/router.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webServer/server.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic/10-生肖星座测算/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic/2-并发/concurrent.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic/2-并发/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic/2-并发/main.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic/2-并发/工作池/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic/5-生产消费模型/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic/interface.go" beforeDir="false" afterPath="$PROJECT_DIR$/basic/interface.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic/sort.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic/sort_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/errCollection/pointer.md" beforeDir="false" afterPath="$PROJECT_DIR$/error/pointer.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webServer/Demo-server-client.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webServer/alg.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webServer/app.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webServer/auto.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webServer/file.go" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +78,7 @@
       <recent name="$PROJECT_DIR$/System" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build aries.go">
+  <component name="RunManager" selected="Go Test.TestBucketSort in sort_test.go">
     <configuration name="go build aries.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="Golang" />
       <working_directory value="$PROJECT_DIR$" />
@@ -141,8 +129,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build aries.go" />
         <item itemvalue="Go Test.TestBucketSort in sort_test.go" />
+        <item itemvalue="Go Build.go build aries.go" />
         <item itemvalue="Go Test.Test_insertSort02 in search_test.go" />
         <item itemvalue="Go Test.TestRemoveRepByMap in slice_test.go" />
         <item itemvalue="Go Test.TestFindDir in fidir_test.go" />
@@ -183,25 +171,25 @@
       <screen x="1680" y="-62" width="1920" height="1055" />
     </state>
     <state x="2277" y="134" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.25.1680.969/1680.-62.1920.1055@1680.-62.1920.1055" timestamp="1608608981240" />
-    <state width="1638" height="258" key="GridCell.Tab.0.bottom" timestamp="1609213693464">
+    <state width="1638" height="258" key="GridCell.Tab.0.bottom" timestamp="1609239625334">
       <screen x="0" y="25" width="1680" height="969" />
     </state>
-    <state width="1638" height="258" key="GridCell.Tab.0.bottom/0.25.1680.969/1680.-62.1920.1055@0.25.1680.969" timestamp="1609213693464" />
+    <state width="1638" height="258" key="GridCell.Tab.0.bottom/0.25.1680.969/1680.-62.1920.1055@0.25.1680.969" timestamp="1609239625334" />
     <state width="1878" height="287" key="GridCell.Tab.0.bottom/0.25.1680.969/1680.-62.1920.1055@1680.-62.1920.1055" timestamp="1608279970653" />
-    <state width="1638" height="258" key="GridCell.Tab.0.center" timestamp="1609213693463">
+    <state width="1638" height="258" key="GridCell.Tab.0.center" timestamp="1609239625333">
       <screen x="0" y="25" width="1680" height="969" />
     </state>
-    <state width="1638" height="258" key="GridCell.Tab.0.center/0.25.1680.969/1680.-62.1920.1055@0.25.1680.969" timestamp="1609213693463" />
+    <state width="1638" height="258" key="GridCell.Tab.0.center/0.25.1680.969/1680.-62.1920.1055@0.25.1680.969" timestamp="1609239625333" />
     <state width="1878" height="287" key="GridCell.Tab.0.center/0.25.1680.969/1680.-62.1920.1055@1680.-62.1920.1055" timestamp="1608279970652" />
-    <state width="1638" height="258" key="GridCell.Tab.0.left" timestamp="1609213693462">
+    <state width="1638" height="258" key="GridCell.Tab.0.left" timestamp="1609239625333">
       <screen x="0" y="25" width="1680" height="969" />
     </state>
-    <state width="1638" height="258" key="GridCell.Tab.0.left/0.25.1680.969/1680.-62.1920.1055@0.25.1680.969" timestamp="1609213693462" />
+    <state width="1638" height="258" key="GridCell.Tab.0.left/0.25.1680.969/1680.-62.1920.1055@0.25.1680.969" timestamp="1609239625333" />
     <state width="1878" height="287" key="GridCell.Tab.0.left/0.25.1680.969/1680.-62.1920.1055@1680.-62.1920.1055" timestamp="1608279970652" />
-    <state width="1638" height="258" key="GridCell.Tab.0.right" timestamp="1609213693463">
+    <state width="1638" height="258" key="GridCell.Tab.0.right" timestamp="1609239625334">
       <screen x="0" y="25" width="1680" height="969" />
     </state>
-    <state width="1638" height="258" key="GridCell.Tab.0.right/0.25.1680.969/1680.-62.1920.1055@0.25.1680.969" timestamp="1609213693463" />
+    <state width="1638" height="258" key="GridCell.Tab.0.right/0.25.1680.969/1680.-62.1920.1055@0.25.1680.969" timestamp="1609239625334" />
     <state width="1878" height="287" key="GridCell.Tab.0.right/0.25.1680.969/1680.-62.1920.1055@1680.-62.1920.1055" timestamp="1608279970653" />
     <state x="2305" y="172" width="670" height="676" key="search.everywhere.popup" timestamp="1608274939494">
       <screen x="1680" y="-62" width="1920" height="1055" />
