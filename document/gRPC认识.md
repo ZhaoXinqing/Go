@@ -1,6 +1,4 @@
-## gRPC是什么？
-
-gRPC是什么可以用官网的一句话来概括（A high-performance, open-source universal RPC framework.）
+## gRPC (A high-performance, open-source universal RPC framework.）
 
 RPC(remote procedure call 远程过程调用)框架实际是提供了一套机制，使得应用程序之间可以进行通信，而且也遵从server/client模型。使用的时候
 客户端调用server端提供的接口就像是调用本地的函数一样。
@@ -11,7 +9,7 @@ gRPC使用的http2.0，而restful api则不一定
 - gRPC可以通过protobuf来定义接口，从而可以有更加严格的接口约束条件。
 - protobuf可以将数据序列化为二进制编码，这会大幅减少需要传输的数据量，从而大幅提高性能。
 - gRPC可以方便地支持流式通信(理论上通过http2.0就可以使用streaming模式, 但是通常web服务的restful api似乎很少这么用，通常的流式数据应用如视频
-    流，一般都会使用专门的协议如HLS，RTMP等，这些就不是我们通常web服务了，而是有专门的服务器应用。）
+  流，一般都会使用专门的协议如HLS，RTMP等，这些就不是我们通常web服务了，而是有专门的服务器应用。）
 
 ### 使用场景
 

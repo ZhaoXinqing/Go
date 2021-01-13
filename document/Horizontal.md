@@ -40,13 +40,13 @@ GossipRecord
 	物道君语：
 	宋朝的美学语言，叫极简。
 	老子曾言：“万物之始，大道至简。”
-	无论任何场景，说话一定要交代故事前提或事情背景，不然同样的话会被别人意会成不同的意思，甚至完全	曲解话语本意。
+	无论任何场景，说话一定要交代故事前提或事情背景，不然同样的话会被别人意会成不同的意思，甚至完全曲解话语本意。
 	
 	琢磨事，琢磨人，琢磨钱，还要琢磨自己，琢磨自己是为了守住财富和守住自己的生活；琢磨事、人、钱是
 	为了赚取金钱和财富。
 	
 	写字：字形要做到内聚外敛，心情不要浮躁，写字如办事，写字的时候心一定要保持不急不躁的安静状态；
-	行形：写出来的字要“口不留缝”，行数整体美观工整，不能上坡或下坡的行形状；
+	行形：写出来的字要“口不留缝”，行数整体美观工整，不能有过于明显的上坡或下坡的形状；
 
 Vertical development
 
@@ -56,12 +56,11 @@ Vertical development
     - 中国步入 “数字经济创新时代”
     - 美元价值属性走弱；
 
-Look at this generation, with all of its electronic devices and multita-sking. I will confidently predict less success 
-than Warren, who just focesed on reading. If you want wisdom, you'll get it sitting on your ass. That's the way it comes.
+Look at this generation, with all of its electronic devices and multitasking. I will confidently predict less success 
+than Warren, who just focused on reading. If you want wisdom, you'll get it sitting on your ass. That's the way it comes.
 
-世界经济史就是一部充满假象和谎言的电视剧，要获得财富，做法就是认清其假象，投入其中，然后在假象被公众识破之前退出游戏。      
-<p align= "right"> ————索罗斯谈 </p>
+世界经济史就是一部充满假象和谎言的电视剧，要获得财富，做法就是认清其假象，投入其中，然后在假象被公众识破之前退出游戏。      ————索罗斯谈 
 
-现在只管学习提升自己就行了，一些成长需要强大的经历刺激才能够激发出来，小打小闹式的收获太浅薄。并且刺激大多难以遇到，遇到需要珍惜。
+现在只管学习提升自己就行了，一些真正的成长需要强大地经历刺激才能够激发出来，小打小闹式的收获不太值得。但刺激大多难以遇到，遇到了需要主动珍惜。
 
 	
