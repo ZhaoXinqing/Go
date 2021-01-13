@@ -12,6 +12,9 @@ func StringToFile(str, file string) {
 
 }
 
+//文件读取: ioutil一次性全部将内容读取到内存中，小文件读取占优势，因为物理内存的局限，不适合读取较大文件；
+//读取大文件，bufio读取会更快，无论是处理大文件还是小文件，bufio始终是最为平滑和高效的。
+
 //func main() {
 //	f, err := os.Create("test.txt") // 如果已存在，则截断这个文件，返回一个文件描述符
 //	if err != nil {
