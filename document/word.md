@@ -23,3 +23,9 @@ Passion：热情
 Universal：普遍
 
 Polygon：多边形
+
+Total：总计
+
+Refactor：重构
+
+Repair：修复
