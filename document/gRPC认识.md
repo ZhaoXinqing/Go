@@ -1,4 +1,4 @@
-## gRPC (A high-performance, open-source universal RPC framework.）
+
 
 RPC(remote procedure call 远程过程调用)框架实际是提供了一套机制，使得应用程序之间可以进行通信，而且也遵从server/client模型。使用的时候
 客户端调用server端提供的接口就像是调用本地的函数一样。
