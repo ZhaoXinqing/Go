@@ -12,19 +12,7 @@
 	-| 无论是通过变基，还是通过三方合并，整合的最终结果所指向的快照始终是一样的，只不过提交历史不同罢了。变基是将一系列提交按照原有次序依次应用到
 	另一分支上，而合并是把最终结果合在一起。
 
-## Git 常用命令
-	- git add readme.txt 		（添加到暂存区）
-	- git commit -m "注释"  	（提交到仓库）
-	- git push -u origin master （推送到远程仓库）
-		- git remote -v  		（查看地址）
-		- git remote rm origin  （删除origin地址）
-	- git status	（查看状态，是否还有文件未提交）
-	- git diff 		（查看变化）
-	- git reset --hard HEAD^ 	（回退到上一个版本）
-	- git log 		（查看历史修改信息）
-	- git reset --hard 版本号；
-	- cat readme.txt 查看内容；
-	- git config --list  //查看配置
+
 		
 
 ## Github
