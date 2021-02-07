@@ -32,3 +32,9 @@ Console：安慰
 Coordinate：坐标
 
 Sample：样品
+Civilization：文明
+Namespace：命名空间
+
+Domain：领域层
+Application：应用层
+Interface：表示层
