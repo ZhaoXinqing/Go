@@ -1,0 +1,56 @@
+{
+  "zoom":7.998346218814823,
+  "center":[
+    118.41346867160098,
+    39.689164558367935
+  ],
+  "layers":[
+    {
+      "type":"polygon",
+      "style":{
+        "type":"unified",
+        "unified":{
+          "fillColor":"#f00",
+          "fillOpacity":1,
+          "strokeColor":"#fff",
+          "strokeWidth":1,
+          "strokeOpacity":1
+        },
+        "category":{
+          "breaks":[
+
+          ],
+          "colors":[
+
+          ],
+          "initScheme":"BuGn",
+          "bucketCount":2,
+          "categoryWay":0,
+          "fillOpacity":1,
+          "strokeColor":"#fff",
+          "strokeWidth":1,
+          "categoryField":"",
+          "strokeOpacity":1
+        }
+      },
+      "title":"唐山区县",
+      "dataset":{
+        "ID":652,
+        "Title":"唐山区县",
+        "model":"dataset",
+        "FolderID":0,
+        "HasParsed":true,
+        "ShareType":0,
+        "UpdatedAt":"2020-08-06 17:00:50",
+        "FeatureType":"MultiPolygon",
+        "FeatureCount":14,
+        "TitleFieldID":8007,
+        "_FeatureType":"面数据"
+      },
+      "layerId":"polygon_652",
+      "visible":true,
+      "sourceId":"polygon_652"
+    }
+  ],
+  "baseMap":"BRETT"
+}

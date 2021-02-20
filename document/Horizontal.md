@@ -1,16 +1,13 @@
 ## Horizontal development
     三观会随着主体个人的社会实践活动不断变化的（观宇宙万物，改思想，进而影响价值取向，周而复始，不断往复）
     1、世界观：世界观的基本问题：意识和物质、思维和存在的关系问题（即唯心主义世界观和唯物主义世界观）   
-    2、人生观：对人生目的和意义的看法，它决定着人们实践活动的目标、人生道路的方向，也决定着人们行为选择的价值取向和对待生活的态度；它是世界观的一个
-    重要组成部分，受到世界观的制约。在阶级社会里和制度下，人生观有进步和落后之分，具有鲜明的阶级性，不同的阶级有不同的人生观。
-    3、价值观：是人认定事物、辩定是非的一种思维或取向，从而体现出人、事、物一定的价值或作用；价值观对动机有导向的作用，同时反映人们的认知和需求状
-    况，具有阶级性、历史性、主观性的特点。
+    2、人生观：对人生目的和意义的看法，它决定着人们实践活动的目标、人生道路的方向，也决定着人们行为选择的价值取向和对待生活的态度；它是世界观的一个重要组成部分，受到世界观的制约。在阶级社会里和制度下，人生观有进步和落后之分，具有鲜明的阶级性，不同的阶级有不同的人生观。
+    3、价值观：是人认定事物、辩定是非的一种思维或取向，从而体现出人、事、物一定的价值或作用；价值观对动机有导向的作用，同时反映人们的认知和需求状况，具有阶级性、历史性、主观性的特点。
 
 
 ## Vertical development
     1、趋势：美元价值属性走弱，中国步入 “数字经济创新时代”
-    2、Look at this generation, with all of its electronic devices and multitasking. I will confidently predict less success 
-    than Warren, who just focused on reading. If you want wisdom, you'll get it sitting on your ass. That's the way it comes.
+    2、Look at this generation, with all of its electronic devices and multitasking. I will confidently predict less success than Warren, who just focused on reading. If you want wisdom, you'll get it sitting on your ass. That's the way it comes.
     3、世界经济史就是一部充满假象和谎言的电视剧，要获得财富，做法就是认清其假象，投入其中，然后在假象被公众识破之前退出游戏。  ————吉姆·索罗斯 
     4、现在只管学习提升自己就行了，一些真正的成长需要强大地经历刺激才能够激发出来，小打小闹式的收获不太值得。但刺激大多难以遇到，遇到了需要主动珍惜。
 
